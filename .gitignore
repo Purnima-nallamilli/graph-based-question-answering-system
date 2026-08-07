@@ -1,0 +1,23 @@
+# Environment variables (Secrets)
+.env
+*.env
+
+# Local Databases & Indexes
+chroma_db/
+*.sqlite3
+
+# Python Virtual Environment
+venv/
+.venv/
+
+# Python Bytecode Cache
+**/__pycache__/
+*.pyc
+
+# Raw Intermediate Datasets
+data/unpatched_dataset*
+
+# IDE & OS Settings
+.DS_Store
+.vscode/
+.idea/

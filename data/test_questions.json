@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "hop_type": "1-hop",
+    "question": "Who directed the movie Game Changer?",
+    "expected_answer": "S. Shankar"
+  },
+  {
+    "id": 2,
+    "hop_type": "2-hop",
+    "question": "Which actors starred in Game Changer, and what other movies feature actor Ram Charan?",
+    "expected_answer": "Ram Charan, Kiara Advani, S. J. Suryah; Ram Charan also starred in RC16"
+  },
+  {
+    "id": 3,
+    "hop_type": "3-hop",
+    "question": "Find all directors who directed movies starring actors who have worked with Prabhas in Kalki 2898 AD.",
+    "expected_answer": "Nag Ashwin, Prashanth Neel, Buchi Babu Sana, Koratala Siva"
+  },
+
+  {
+    "id": 4,
+    "hop_type": "2-hop",
+    "question": "Which movies feature actors who also acted in Kalki 2898 AD?",
+    "expected_answer": "Salaar, Project K-related movies, and other linked films in the dataset."
+  }
+]
