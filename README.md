@@ -87,7 +87,7 @@ The Streamlit application provides an intuitive interface for submitting movie-r
 Both retrieval pipelines execute the same user query, enabling a direct comparison of answer quality, reasoning capability, and execution latency.
 
 <p align="center">
-<img src="screenshots/graph_vs_vector_comparison.png" width="950">
+<img src="screenshots/comparison_results.png" width="950">
 </p>
 
 ---
