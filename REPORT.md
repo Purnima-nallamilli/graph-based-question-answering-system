@@ -1,538 +1,299 @@
-# 🎬 Graph-Based Question Answering System using Graph RAG and Vector RAG
-
-> **A Hybrid Retrieval-Augmented Generation (RAG) system that compares Graph RAG and Vector RAG for answering single-hop and multi-hop movie-related questions using a Neo4j Knowledge Graph and Chroma Vector Database.**
-
----
-
-# 📖 Project Overview
-
-This project implements a **Hybrid Question Answering System** that compares two Retrieval-Augmented Generation (RAG) techniques over the same Tollywood movie dataset:
-
-- **Graph RAG** using a Neo4j Knowledge Graph
-- **Vector RAG** using ChromaDB and semantic embeddings
-
-While Vector RAG retrieves information based on semantic similarity, Graph RAG traverses explicit relationships between entities such as **movies, actors, directors, writers, music directors, producers, genres, production houses, and cinematographers**, enabling more effective multi-hop reasoning.
-
-An interactive **Streamlit dashboard** allows users to execute the same query on both retrieval pipelines, compare their responses, visualize graph structures, and evaluate their performance using multiple benchmark metrics.
+# Technical Report
+## Graph-Based Question Answering System using Graph RAG and Vector RAG
 
 ---
 
-# 🎯 Assignment Objective
+## 1. Introduction
 
-This project was developed as the solution for **Problem Statement 3 – Graph-Based Question Answering System**.
+Traditional Retrieval-Augmented Generation (RAG) systems primarily retrieve information using semantic similarity between a user query and stored text chunks. Although this works well for direct factual questions, it can become challenging when a question requires connecting multiple related entities.
 
-The primary objectives were to:
+This project implements the solution for **Problem Statement 3 – Graph-Based Question Answering System** using the movie domain. The system compares two retrieval approaches over the same dataset: **Graph RAG** using a Neo4j Knowledge Graph and **Vector RAG** using ChromaDB.
 
-- Build a structured Knowledge Graph using Neo4j.
-- Build a semantic Vector Database using ChromaDB.
-- Implement Graph RAG and Vector RAG over the same dataset.
-- Compare both retrieval approaches using identical benchmark questions.
-- Evaluate retrieval quality, answer accuracy, execution latency, and multi-hop reasoning capability.
+The Knowledge Graph represents movies and their associated entities as connected nodes and relationships, allowing the system to perform relationship-aware and multi-hop retrieval. The Vector RAG pipeline retrieves semantically similar document chunks using embeddings. Both approaches use Google Gemini 2.5 Flash for query processing and answer generation.
+
+An interactive Streamlit application allows the same question to be executed through both pipelines and provides comparative evaluation based on retrieval accuracy, answer accuracy, execution latency, multi-hop reasoning capability, and response completeness.
 
 ---
 
-# ✨ Key Features
+## 2. Problem Statement
 
-### 🕸 Knowledge Graph
+Problem Statement 3 requires the development of a Question Answering system using a Knowledge Graph. The system must build a graph from a selected domain, store it in a graph database, answer questions through graph traversal, and compare its performance with a traditional Vector RAG system.
 
-- Neo4j Knowledge Graph construction
-- Rich graph schema with multiple entity types
-- Dynamic Cypher query generation
-- Multi-hop graph traversal
+For this project, the movie domain was selected. The system uses a Neo4j Knowledge Graph for structured relationship-based retrieval and ChromaDB for semantic vector retrieval. Both approaches are evaluated using the same benchmark questions, including single-hop, two-hop, and three-hop questions.
 
-### 📚 Vector Retrieval
-
-- Chroma Vector Database
-- Google Gemini Embeddings
-- Semantic similarity search
-- Context-aware response generation
-
-### 🤖 AI Question Answering
-
-- Google Gemini 2.5 Flash
-- Graph RAG pipeline
-- Vector RAG pipeline
-- Automatic query complexity analysis
-
-### 📊 Evaluation
-
-- Side-by-side Graph RAG vs Vector RAG comparison
-- Execution latency measurement
-- Retrieval quality evaluation
-- Interactive charts and visual analytics
-
-### 🖥 User Interface
-
-- Interactive Streamlit dashboard
-- Knowledge Graph visualization
-- Neo4j graph exploration
-- Benchmark question support
+The purpose of the comparison is to understand where graph-based retrieval provides advantages over traditional vector retrieval, particularly for questions requiring multiple connected relationships.
 
 ---
 
-# 📸 Project Demonstration
+## 3. Objectives
 
-## 🏠 Application Home Page
+The main objectives of the project are:
 
-The Streamlit application provides an intuitive interface for submitting movie-related questions and comparing Graph RAG and Vector RAG responses.
-
-<p align="center">
-<img src="screenshots/home_page.png" width="950">
-</p>
-
----
-
-## 🔍 Graph RAG vs Vector RAG Comparison
-
-Both retrieval pipelines execute the same user query, enabling a direct comparison of answer quality, reasoning capability, and execution latency.
-
-<p align="center">
-<img src="screenshots/comparison_results.png" width="950">
-</p>
+- Build a structured movie Knowledge Graph using Neo4j.
+- Design meaningful nodes and relationships between movie-domain entities.
+- Implement Graph RAG using natural-language-to-Cypher query generation.
+- Implement Vector RAG using ChromaDB and semantic embeddings.
+- Evaluate both approaches using the same benchmark questions.
+- Compare retrieval accuracy, answer accuracy, execution speed, and response completeness.
 
 ---
 
-## 📊 Evaluation Metrics
+# 4. System Overview
 
-The system evaluates both approaches using benchmark questions and visualizes retrieval accuracy, answer quality, execution time, and completion status.
+The system provides two independent retrieval pipelines behind a common Streamlit interface.
 
-<p align="center">
-<img src="screenshots/evaluation_metrics.png" width="950">
-</p>
+When a user submits a movie-related question, the application processes the same question through both Graph RAG and Vector RAG. The Graph RAG pipeline converts the natural-language question into a Cypher query, executes the query against Neo4j, retrieves the required graph information, and generates the final response using Gemini.
 
----
+The Vector RAG pipeline converts the question into an embedding, searches ChromaDB for semantically similar document chunks, and supplies the retrieved context to Gemini for answer generation.
 
-## 🕸 Knowledge Graph Schema & System Architecture
+The outputs of both pipelines are presented for comparison. The application also records execution latency and evaluates the responses using the project's benchmark questions.
 
-This view illustrates the graph schema, supported node labels, relationship types, and the overall architecture of the Hybrid RAG system.
-
-<p align="center">
-<img src="screenshots/graph_schema_architecture.png" width="950">
-</p>
+The implementation uses Python, Streamlit, LangChain, Google Gemini, Neo4j, ChromaDB, Cypher, and Google embedding models.
 
 ---
 
-## 🌐 Neo4j Knowledge Graph Visualization
+# 5. Graph Design
 
-Visualization of the generated Knowledge Graph, highlighting the relationships between movies and associated entities such as actors, directors, writers, producers, genres, editors, music directors, and cinematographers.
+The Knowledge Graph is the central component of the Graph RAG pipeline. Instead of storing movie information as isolated documents, the system models the movie domain as interconnected entities.
 
-<p align="center">
-<img src="screenshots/neo4j_graph_visualization.png" width="950">
-</p>
+## 5.1 Node Types
 
----
-
-## 🗄 Neo4j Database Overview
-
-Overview of the populated Neo4j database, including node labels, relationship types, property keys, and graph statistics after data ingestion.
-
-<p align="center">
-<img src="screenshots/neo4j_database_overview.png" width="950">
-</p>
-
----
-
-# 🛠️ Technology Stack
-
-| Category | Technologies |
-|----------|--------------|
-| **Programming Language** | Python 3.11 |
-| **User Interface** | Streamlit |
-| **Large Language Model** | Google Gemini 2.5 Flash |
-| **Knowledge Graph Database** | Neo4j AuraDB |
-| **Vector Database** | ChromaDB |
-| **Framework** | LangChain |
-| **Embedding Model** | GoogleGenerativeAIEmbeddings |
-| **Graph Query Language** | Cypher |
-| **Dataset Sources** | Wikipedia, TMDB API |
-| **Environment Management** | python-dotenv |
-| **Version Control** | Git & GitHub |
-
----
-
-# 📂 Project Structure
-
-```text
-graph-based-question-answering-system/
-│
-├── app.py                         # Streamlit application
-├── README.md                      # Project documentation
-├── REPORT.md                      # Technical report
-├── requirements.txt               # Project dependencies
-├── .env.example                   # Environment variables template
-├── .gitignore
-│
-├── data/
-│   ├── movies_dataset.json        # Final processed dataset
-│   └── test_questions.json        # Benchmark questions
-│
-├── scripts/
-│   ├── wiki_scrapper.py           # Dataset collection
-│   ├── patch_data.py              # Metadata enrichment using TMDB
-│   ├── finalize_data.py           # Dataset standardization
-│   ├── ingest.py                  # Neo4j graph ingestion
-│   ├── ingest_vector.py           # ChromaDB ingestion
-│   └── test_conn.py               # Neo4j connection verification
-│
-├── src/
-│   ├── config.py                  # Environment configuration
-│   ├── graph_rag.py               # Graph RAG pipeline
-│   ├── vector_rag.py              # Vector RAG pipeline
-│   └── evaluator.py               # Comparative evaluation
-│
-└── screenshots/
-    ├── home_page.png
-    ├── graph_vs_vector_comparison.png
-    ├── evaluation_metrics.png
-    ├── graph_schema_architecture.png
-    ├── neo4j_graph_visualization.png
-    └── neo4j_database_overview.png
-```
-
----
-
-# 🏗️ System Architecture
-
-```
-                         User Question
-                               │
-                               ▼
-                   Streamlit Web Application
-                               │
-              ┌────────────────┴────────────────┐
-              │                                 │
-              ▼                                 ▼
-      Graph RAG Pipeline                Vector RAG Pipeline
-              │                                 │
-      Gemini 2.5 Flash                 Gemini Embeddings
-              │                                 │
-      Cypher Query Generation          Semantic Similarity Search
-              │                                 │
-              ▼                                 ▼
-     Neo4j Knowledge Graph             Chroma Vector Database
-              │                                 │
-              └──────────────┬──────────────────┘
-                             ▼
-                 Comparative Performance Analysis
-                             ▼
-                    Final Answers & Evaluation
-```
-
----
-
-# 🕸️ Knowledge Graph Design
-
-The Knowledge Graph represents movies as interconnected entities rather than isolated documents. This enables explicit relationship traversal and improves multi-hop reasoning capabilities.
-
-### Node Labels
+The graph contains the following major node labels:
 
 | Node | Description |
-|------|-------------|
-| 🎬 Movie | Movie details |
-| 🎭 Actor | Cast members |
-| 🎥 Director | Film directors |
-| 🎵 MusicDirector | Music composers |
-| ✍️ Writer | Story & screenplay writers |
-| ✂️ Editor | Editors |
-| 📷 Cinematographer | Cinematographers |
-| 👤 Producer | Producers |
-| 🏢 ProductionHouse | Production banners |
-| 🎭 Genre | Movie genres |
+|---|---|
+| `Movie` | Movie information |
+| `Actor` | Actors appearing in movies |
+| `Director` | Directors of movies |
+| `MusicDirector` | Music composers |
+| `Writer` | Story and screenplay writers |
+| `Editor` | Film editors |
+| `Cinematographer` | Cinematographers |
+| `Producer` | Movie producers |
+| `ProductionHouse` | Production banners |
+| `Genre` | Movie genres |
+
+## 5.2 Relationship Types
+
+The main relationships in the Knowledge Graph are:
+
+| Relationship | Meaning |
+|---|---|
+| `ACTED_IN` | Actor → Movie |
+| `DIRECTED` | Director → Movie |
+| `COMPOSED_MUSIC_FOR` | Music Director → Movie |
+| `WROTE` | Writer → Movie |
+| `EDITED` | Editor → Movie |
+| `FILMED` | Cinematographer → Movie |
+| `PRODUCED` | Producer → Movie |
+| `PRODUCED_BY_BANNER` | Production House → Movie |
+| `BELONGS_TO` | Movie → Genre |
+
+This graph structure allows the system to explicitly follow relationships between entities. For example, a multi-hop question can require traversal across several connected nodes rather than retrieving a single text chunk.
+
+The graph is stored in Neo4j and populated using the project's ingestion pipeline.
+
+### Graph Schema and Architecture
+
+![Graph Schema and Architecture](screenshots/graph_schema_architecture.png)
 
 ---
 
-### Relationship Types
+# 6. Retrieval Approach
 
-| Relationship | Description |
-|--------------|-------------|
-| ACTED_IN | Actor → Movie |
-| DIRECTED | Director → Movie |
-| COMPOSED_MUSIC_FOR | Music Director → Movie |
-| WROTE | Writer → Movie |
-| EDITED | Editor → Movie |
-| FILMED | Cinematographer → Movie |
-| PRODUCED | Producer → Movie |
-| PRODUCED_BY_BANNER | Production House → Movie |
-| BELONGS_TO | Movie → Genre |
+The project implements two retrieval approaches using the same underlying movie information.
 
----
+## 6.1 Graph RAG
 
-# 🔷 Graph RAG Pipeline
+Graph RAG uses the Knowledge Graph to retrieve structured information through graph traversal.
 
-The Graph RAG workflow retrieves structured knowledge by traversing relationships stored inside the Neo4j Knowledge Graph.
+The workflow is:
 
-### Workflow
+1. The user submits a natural-language question.
+2. Gemini 2.5 Flash interprets the question.
+3. A Cypher query is generated according to the graph schema.
+4. The Cypher query is executed against Neo4j.
+5. Relevant nodes and relationships are retrieved.
+6. The retrieved graph context is provided to Gemini.
+7. Gemini generates the final natural-language answer.
 
-1. User submits a natural language question.
-2. Gemini 2.5 Flash converts the question into a Cypher query.
-3. The Cypher query is executed against Neo4j.
-4. Relevant nodes and relationships are retrieved.
-5. Gemini synthesizes the retrieved graph information into a natural language response.
+The main advantage of this approach is that relationships are explicitly represented. This makes Graph RAG particularly suitable for multi-hop questions.
 
-### Strengths
+## 6.2 Vector RAG
 
-- Multi-hop reasoning
-- Relationship-aware retrieval
-- Explainable graph traversal
-- High factual consistency
+Vector RAG uses semantic similarity to retrieve relevant information.
 
----
+The workflow is:
 
-# 📚 Vector RAG Pipeline
+1. The user submits the same question.
+2. The question is converted into an embedding.
+3. ChromaDB performs semantic similarity search.
+4. Relevant document chunks are retrieved.
+5. The retrieved context is supplied to Gemini 2.5 Flash.
+6. Gemini generates the final answer.
 
-The Vector RAG workflow retrieves semantically similar documents from ChromaDB.
-
-### Workflow
-
-1. User submits a question.
-2. Gemini Embedding converts the query into vector embeddings.
-3. ChromaDB retrieves the most relevant document chunks.
-4. Retrieved context is supplied to Gemini 2.5 Flash.
-5. Gemini generates the final response.
-
-### Strengths
-
-- Fast semantic retrieval
-- Effective document search
-- Low retrieval latency
-
-### Limitations
-
-- No explicit relationship traversal
-- Reduced performance on complex multi-hop questions
-- Limited explainability compared to Graph RAG
+Vector RAG provides a simpler retrieval mechanism and is effective for direct factual or document-level questions. However, semantic similarity alone does not explicitly represent the relationships between entities.
 
 ---
 
-# ⚙️ Installation & Setup
+# 7. Experimental Comparison
 
-## 1️⃣ Clone the Repository
+A common benchmark dataset is used so that Graph RAG and Vector RAG receive the same questions. This provides a consistent basis for comparing the two retrieval strategies.
 
-```bash
-git clone https://github.com/Purnima-nallamilli/graph-based-question-answering-system.git
+The benchmark contains questions with different reasoning requirements:
 
-cd graph-based-question-answering-system
-```
+- **Single-hop questions** – require one direct relationship.
+- **Two-hop questions** – require connecting two relationships.
+- **Three-hop questions** – require multiple connected relationships.
 
----
+The evaluation considers:
 
-## 2️⃣ Create a Virtual Environment
+| Metric | Purpose |
+|---|---|
+| Retrieval Accuracy | Measures whether relevant information is retrieved |
+| Answer Accuracy | Measures correctness of the final answer |
+| Execution Latency | Measures processing time |
+| Multi-Hop Reasoning | Measures ability to follow connected relationships |
+| Response Completeness | Measures whether the pipeline successfully completes the task |
 
-### Windows
+### Comparison Screenshot
 
-```bash
-python -m venv venv
+![Graph RAG vs Vector RAG Comparison](screenshots/graph_vs_vector_comparison.png)
 
-venv\Scripts\activate
-```
-
-### Linux / macOS
-
-```bash
-python3 -m venv venv
-
-source venv/bin/activate
-```
+The same user query is executed through both pipelines, allowing the evaluator to directly observe differences in retrieved information, generated answers, and execution time.
 
 ---
 
-## 3️⃣ Install Dependencies
+# 8. Evaluation Results
 
-```bash
-pip install -r requirements.txt
-```
+The evaluation interface provides a direct comparison of Graph RAG and Vector RAG using the benchmark questions.
 
----
+For the demonstrated relationship-intensive evaluation, the observed results were:
 
-## 4️⃣ Configure Environment Variables
+| Metric | Graph RAG | Vector RAG |
+|---|---:|---:|
+| Execution Latency | 4.735 sec | 3.458 sec |
+| Retrieval Accuracy | 90% | 30% |
+| Answer Accuracy | 95% | 20% |
+| Execution Status | Completed | Partial |
 
-Create a `.env` file in the project root by referring to the provided `.env.example`.
+The observed results show a clear trade-off.
 
-```env
-GOOGLE_API_KEY=your_google_api_key
+Vector RAG completed the demonstrated query faster, with an observed latency of 3.458 seconds. Graph RAG required 4.735 seconds, mainly because the pipeline performs query generation and graph traversal before generating the final response.
 
-TMDB_API_KEY=your_tmdb_api_key
+However, Graph RAG achieved substantially higher retrieval and answer accuracy for the relationship-intensive query. Its explicit graph structure allowed the system to follow the required relationships between entities, whereas Vector RAG relied on semantic similarity between stored text chunks.
 
-NEO4J_URI=your_neo4j_uri
+These values represent the observed results for the demonstrated evaluation and should be interpreted within the scope of the project's dataset and benchmark rather than as a universal benchmark of Graph RAG versus Vector RAG.
 
-NEO4J_USERNAME=neo4j
+### Evaluation Metrics Screenshot
 
-NEO4J_PASSWORD=your_neo4j_password
-```
-
----
-
-# ▶️ Running the Project
-
-### Step 1 — Verify Neo4j Connection
-
-```bash
-python scripts/test_conn.py
-```
+![Evaluation Metrics](screenshots/evaluation_metrics.png)
 
 ---
 
-### Step 2 — Build the Knowledge Graph
+# 9. Observations
 
-```bash
-python scripts/ingest.py
-```
-
----
-
-### Step 3 — Create the Vector Database
-
-```bash
-python scripts/ingest_vector.py
-```
-
----
-
-### Step 4 — Launch the Application
-
-```bash
-streamlit run app.py
-```
-
-The application will automatically open in your default browser.
-
----
-
-# 💬 Sample Questions
-
-### 1-Hop
-
-```text
-Who directed the movie Game Changer?
-```
-
----
-
-### 2-Hop
-
-```text
-Which actors starred in Game Changer, and what other movies feature actor Ram Charan?
-```
-
----
-
-### 3-Hop
-
-```text
-Find all directors who directed movies starring actors who have worked with Prabhas in Kalki 2898 AD.
-```
-
----
-
-# 📊 Evaluation Methodology
-
-To ensure a fair comparison, **Graph RAG** and **Vector RAG** are evaluated using the same benchmark dataset.
-
-The evaluation considers the following metrics:
-
-- ✅ Retrieval Accuracy
-- ✅ Answer Accuracy
-- ✅ Execution Latency
-- ✅ Multi-Hop Reasoning Capability
-- ✅ Response Completeness
-
-The benchmark dataset contains:
-
-- Single-Hop Questions
-- Two-Hop Questions
-- Three-Hop Questions
-
-The application also provides interactive visualizations to compare the performance of both retrieval techniques.
-
----
-
-# 📈 Results & Observations
-
-The experimental results demonstrate the strengths and limitations of both retrieval approaches.
+The experimental comparison produced several important observations.
 
 ### Graph RAG
 
-- Excellent performance on multi-hop reasoning tasks.
-- Relationship-aware retrieval using Neo4j.
-- Generates explainable answers through graph traversal.
-- Produces highly structured responses for connected entities.
+Graph RAG performed strongly on questions requiring relationships between multiple entities. Since the relationships are explicitly stored in Neo4j, the retrieval process can follow a defined path through the graph.
+
+This makes Graph RAG particularly suitable for multi-hop questions where the answer depends on combining information from several connected entities.
+
+Graph traversal also provides better structural explainability because the retrieved information can be associated with specific nodes and relationships.
 
 ### Vector RAG
 
-- Performs well for direct factual queries.
-- Fast semantic retrieval using dense embeddings.
-- Effective for document-level similarity search.
-- May struggle with complex relational reasoning across multiple entities.
+Vector RAG demonstrated lower execution latency in the observed comparison. Semantic retrieval is useful for straightforward factual questions because relevant information can be retrieved without constructing or traversing an explicit graph.
 
-Overall, **Graph RAG consistently provides more accurate responses for relationship-intensive questions**, while **Vector RAG offers efficient semantic retrieval for straightforward information retrieval tasks**.
+However, complex relational questions can be more difficult because semantically similar document chunks do not necessarily preserve the complete chain of relationships required to answer a multi-hop question.
 
----
+### Overall Observation
 
-# 🚀 Future Enhancements
+The experiment indicates that the two approaches have different strengths.
 
-Possible future improvements include:
+**Graph RAG is more suitable for structured, relationship-heavy and multi-hop questions, while Vector RAG is effective for fast semantic retrieval and straightforward factual questions.**
 
-- Hybrid Graph + Vector Retrieval
-- Support for larger movie datasets
-- Real-time dataset updates
-- Docker-based deployment
-- Cloud deployment (AWS / Azure / GCP)
-- Conversational multi-turn question answering
-- Advanced evaluation metrics (Precision@K, Recall@K, F1-score)
-- Graph visualization enhancements
-- User authentication and history tracking
+Therefore, the results do not suggest that one retrieval method is universally better. The appropriate approach depends on the structure and reasoning requirements of the query.
 
 ---
 
-# 📚 Learning Outcomes
+# 10. Trade-offs
 
-This project provided practical experience with:
+## Graph RAG
 
-- Knowledge Graph Modeling
-- Neo4j Graph Database
-- Cypher Query Language
-- Retrieval-Augmented Generation (RAG)
-- Graph RAG
-- Vector RAG
-- Semantic Search
-- LangChain
-- Google Gemini APIs
-- ChromaDB
-- Streamlit Application Development
-- Comparative Evaluation of AI Retrieval Systems
+### Advantages
 
----
+- Explicit representation of entities and relationships.
+- Strong support for multi-hop reasoning.
+- Relationship-aware retrieval.
+- Better structural explainability.
+- Suitable for highly connected domains.
 
-# 🤝 Acknowledgements
+### Limitations
 
-This project was developed as part of an AI Internship Technical Assessment.
+- Requires careful graph schema design.
+- Requires maintaining nodes and relationships.
+- Cypher generation introduces additional processing.
+- Graph construction is more complex than basic vector indexing.
 
-Special thanks to the teams behind:
+## Vector RAG
 
-- Neo4j
-- LangChain
-- Google Gemini
-- ChromaDB
-- Streamlit
-- TMDB
-- Wikipedia
+### Advantages
 
-for providing the technologies and data sources used throughout this project.
+- Simple semantic retrieval architecture.
+- Fast retrieval for straightforward questions.
+- Easy to apply to text-based information.
+- Does not require an explicit relationship schema.
 
----
+### Limitations
 
-# 👩‍💻 Author
-
-**Purnima Nallamilli**
-
-B.Tech – Information Technology
-
-GitHub: https://github.com/Purnima-nallamilli
-
-LinkedIn: *(Add your LinkedIn profile URL here)*
+- Relationships are not explicitly represented.
+- Multi-hop reasoning can be difficult.
+- Relevant chunks may not preserve the required relationship chain.
+- Lower structural explainability compared with graph traversal.
 
 ---
 
-# ⭐ Support
+# 11. Challenges
 
-If you found this project useful or interesting, consider giving the repository a ⭐ on GitHub.
+Several challenges were encountered during implementation:
+
+- Designing a graph schema that represents different movie entities and their relationships clearly.
+- Converting natural-language questions into valid Cypher queries.
+- Keeping the Graph RAG and Vector RAG pipelines based on the same dataset for a fair comparison.
+- Handling multi-hop questions requiring several connected relationships.
+- Measuring retrieval quality and answer accuracy consistently.
+- Integrating Neo4j, ChromaDB, Gemini, LangChain, and Streamlit into a single application.
+- Balancing retrieval accuracy with execution latency.
+
+---
+
+# 12. Future Improvements
+
+The system can be improved in several directions:
+
+- Implement a hybrid Graph + Vector retrieval strategy.
+- Expand the movie dataset to increase knowledge coverage.
+- Add more two-hop and three-hop benchmark questions.
+- Support real-time updates to the Knowledge Graph.
+- Add additional graph-based retrieval approaches for comparison.
+- Introduce advanced retrieval metrics such as Precision@K, Recall@K, and F1-score.
+- Improve Cypher validation and error handling.
+- Add conversational multi-turn question answering.
+- Deploy the application using Docker or a cloud platform.
+
+---
+
+# 13. Conclusion
+
+This project demonstrates a working Graph-Based Question Answering system that compares Graph RAG with traditional Vector RAG over the same movie-domain dataset.
+
+The system combines a Neo4j Knowledge Graph, ChromaDB vector retrieval, Google Gemini 2.5 Flash, LangChain, and Streamlit. The Knowledge Graph explicitly models relationships between movies, actors, directors, writers, producers, genres, and other entities, enabling structured graph traversal for multi-hop questions.
+
+The experimental comparison shows that Vector RAG can provide lower latency for semantic retrieval, while Graph RAG can provide stronger retrieval and answer accuracy for relationship-intensive questions. The results demonstrate the main advantage of graph-based retrieval: explicit relationships make it easier to reason across multiple connected entities.
+
+Overall, the project shows that **Graph RAG is particularly valuable when the question depends on relationships and multi-hop reasoning, while Vector RAG remains useful for fast semantic retrieval of straightforward information.**
+
+---
