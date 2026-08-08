@@ -132,7 +132,7 @@ A common benchmark ensures both pipelines receive identical questions, spanning:
 
 ### Comparison Screenshot
 
-![Graph RAG vs Vector RAG Comparison](screenshots/graph_vs_vector_comparison.png)
+![Graph RAG vs Vector RAG Comparison](screenshots/comparison_results.png)
 
 Running the same query through both pipelines lets the evaluator directly compare retrieved information, generated answers, and execution time.
 
