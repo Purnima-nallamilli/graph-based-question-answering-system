@@ -350,7 +350,7 @@ Who directed the movie Game Changer?
 ## 2-Hop Question
 
 ```text
-Which actors starred in Game Changer, and what other movies feature actor Ram Charan?
+Which actors have co-starred in multiple movies with Nandamuri Balakrishna?
 ```
 
 ---
@@ -358,7 +358,7 @@ Which actors starred in Game Changer, and what other movies feature actor Ram Ch
 ## 3-Hop Question
 
 ```text
-Find all directors who directed movies starring actors who have worked with Prabhas in Kalki 2898 AD.
+Which actors starred in movies that had music composed by Bheems Ceciroleo?
 ```
 
 These questions demonstrate increasing levels of relationship traversal and reasoning complexity.
