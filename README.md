@@ -486,6 +486,4 @@ GitHub: https://github.com/Purnima-nallamilli
 
 ---
 
-# 📄 License
 
-This project was developed as part of an AI Internship Technical Assessment for **Problem Statement 3 – Graph-Based Question Answering System**.
