@@ -1,0 +1,6639 @@
+## raw dataset i.e before patching. not the final dataset used for the knowledge graph generation
+
+[
+  {
+    "title": "Katha Kamamishu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Goutham",
+      "Karthik"
+    ],
+    "story_by": [
+      "Goutham"
+    ],
+    "screenplay": [
+      "Goutham",
+      "Karthik"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Chinna Vasudeva Reddy"
+    ],
+    "production_company": [
+      "iDream Media",
+      "Three Whistles Talkies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "RR Dhruvan"
+      ],
+      "cinematographer": [
+        "Aravind Viswanathan"
+      ],
+      "editors": [
+        "Vishal",
+        "Satya"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-02",
+      "running_time_minutes": 112,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹10 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Neeli Megha Shyama",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Ravi S Varmaa"
+    ],
+    "story_by": [
+      "Arjun",
+      "Carthyk"
+    ],
+    "screenplay": [
+      "Nandu Savirigana"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Karthik Satya"
+    ],
+    "production_company": [
+      "Moonshine Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Shravan Bharadwaj"
+      ],
+      "cinematographer": [
+        "Suneel Reddy"
+      ],
+      "editors": [
+        "Balaji VBJ"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-09",
+      "running_time_minutes": 116,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Game Changer (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Political",
+      "Drama",
+      "Action"
+    ],
+    "director": [
+      "S. Shankar"
+    ],
+    "story_by": [
+      "Karthik Subbaraj"
+    ],
+    "screenplay": [
+      "S. Shankar"
+    ],
+    "dialogues": [
+      "Sai Madhav Burra"
+    ],
+    "producers": [
+      "Dil Raju",
+      "Shirish"
+    ],
+    "production_company": [
+      "Sri Venkateswara Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Thaman S"
+      ],
+      "cinematographer": [
+        "Tirru"
+      ],
+      "editors": [
+        "Shameer Muhammed",
+        "Ruben"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-10",
+      "running_time_minutes": 165,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹350–500 crore",
+      "box_office": "est. ₹195 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Daaku Maharaaj",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Bobby Kolli"
+    ],
+    "story_by": [
+      "Bobby Kolli"
+    ],
+    "screenplay": [
+      "K. Chakravarthy Reddy",
+      "Bobby Kolli"
+    ],
+    "dialogues": [
+      "Nandu Savirigana",
+      "Bhanu Bogavarapu"
+    ],
+    "producers": [
+      "Suryadevara Naga Vamsi",
+      "Sai Sowjanya"
+    ],
+    "production_company": [
+      "Sithara Entertainments",
+      "Fortune Four Cinemas",
+      "Srikara Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Thaman S"
+      ],
+      "cinematographer": [
+        "Vijay Kartik Kannan"
+      ],
+      "editors": [
+        "Ruben",
+        "Niranjan Devaramane"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-12",
+      "running_time_minutes": 148,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹100 crore",
+      "box_office": "est. ₹130 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Sankranthiki Vasthunam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Anil Ravipudi"
+    ],
+    "story_by": [
+      "Anil Ravipudi",
+      "S. Krishna",
+      "G. Adhinarayana"
+    ],
+    "screenplay": [
+      "Anil Ravipudi",
+      "S. Krishna",
+      "G. Adhinarayana"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Dil Raju",
+      "Sirish"
+    ],
+    "production_company": [
+      "Sri Venkateswara Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Bheems Ceciroleo"
+      ],
+      "cinematographer": [
+        "Sameer Reddy"
+      ],
+      "editors": [
+        "Tammiraju"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-14",
+      "running_time_minutes": 144,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹50 crore",
+      "box_office": "est. ₹258–300 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Wife Off",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Bhanu Yerubandi"
+    ],
+    "story_by": [
+      "Bhanu Yerubandi"
+    ],
+    "screenplay": [
+      "Bhanu Yerubandi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Divya Sree Gurugubelli",
+      "Abhinav Manikanta",
+      "Nikhil Gajula"
+    ],
+    "production_company": [
+      "Tamada Media"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Praneeth Muzic"
+      ],
+      "cinematographer": [
+        "Ashkar Ali"
+      ],
+      "editors": [
+        "Sai Krishna Ganala"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-23",
+      "running_time_minutes": 80,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Gandhi Tatha Chettu",
+    "year": 2024,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Padmavathi Malladi"
+    ],
+    "story_by": [
+      "Padmavathi Malladi"
+    ],
+    "screenplay": [
+      "Padmavathi Malladi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naveen Yerneni",
+      "Yalamanchili Ravi Shankar",
+      "Sesha Sindhu Rao"
+    ],
+    "production_company": [
+      "Mythri Movie Makers",
+      "Sukumar Writings",
+      "Gopi Talkies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Ree"
+      ],
+      "cinematographer": [
+        "Vishwa Devabattula",
+        "Srijitha Cheruvupally"
+      ],
+      "editors": [
+        "Hari Shankar TN"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-24",
+      "running_time_minutes": 114,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Hathya",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Political",
+      "Thriller"
+    ],
+    "director": [
+      "Srividya Basawa"
+    ],
+    "story_by": [
+      "Srividya Basawa"
+    ],
+    "screenplay": [
+      "Srividya Basawa"
+    ],
+    "dialogues": [],
+    "producers": [
+      "S Prashanth Reddy"
+    ],
+    "production_company": [
+      "Mahaakaal Pictures"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Naresh Kumaran P"
+      ],
+      "cinematographer": [
+        "Abhiraj Rajendran Nair"
+      ],
+      "editors": [
+        "Anil Kumar P"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-24",
+      "running_time_minutes": 148,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Pothugadda",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Political",
+      "Drama"
+    ],
+    "director": [
+      "Raksha Veeram"
+    ],
+    "story_by": [
+      "Raksha Veeram"
+    ],
+    "screenplay": [
+      "Raksha Veeram"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Anupama Chandra Koduri",
+      "G. Sharath Chandra Reddy"
+    ],
+    "production_company": [
+      "24 Cinema Street"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score",
+        "Marcus M",
+        "Songs",
+        "Shravan Bharadwaj"
+      ],
+      "cinematographer": [
+        "Rahul Shrivatsav"
+      ],
+      "editors": [
+        "SJ Shivakiran"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-30",
+      "running_time_minutes": 111,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Coffee with a Killer",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Comedy"
+    ],
+    "director": [
+      "R. P. Patnaik"
+    ],
+    "story_by": [
+      "R. P. Patnaik"
+    ],
+    "screenplay": [
+      "R. P. Patnaik"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sevenhills Satish"
+    ],
+    "production_company": [
+      "Sevenhills Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Bharath Madhusudhanan"
+      ],
+      "cinematographer": [
+        "Anush Gorak"
+      ],
+      "editors": [
+        "Anush Gorak"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-31",
+      "running_time_minutes": 104,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Racharikam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Political",
+      "Drama"
+    ],
+    "director": [
+      "Suresh Lankalapalli"
+    ],
+    "story_by": [
+      "Suresh Lankalapalli"
+    ],
+    "screenplay": [
+      "Suresh Lankalapalli"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Esshwar"
+    ],
+    "production_company": [
+      "Chill Bross Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vengi"
+      ],
+      "cinematographer": [
+        "Arya Sai Krishna"
+      ],
+      "editors": [
+        "JP"
+      ]
+    },
+    "release_details": {
+      "date": "2025-01-31",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Oka Padhakam Prakaram",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Vinod Vijayan"
+    ],
+    "story_by": [
+      "Vinod Vijayan"
+    ],
+    "screenplay": [
+      "Vinod Vijayan"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vinod Vijayan",
+      "Garlapati Ramesh"
+    ],
+    "production_company": [
+      "Vinod Vijayan Films",
+      "Vihari Cinema House"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Songs:",
+        "Rahul Raj",
+        "Score:",
+        "Gopi Sundar"
+      ],
+      "cinematographer": [
+        "Rajeev Ravi",
+        "Pappu",
+        "Vinod Illampally",
+        "Suresh Rajan"
+      ],
+      "editors": [
+        "Karthik Jogesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Thandel",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Chandoo Mondeti"
+    ],
+    "story_by": [
+      "Kartheek Theeda"
+    ],
+    "screenplay": [
+      "Chandoo Mondeti"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Bunny Vasu"
+    ],
+    "production_company": [
+      "Geetha Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Devi Sri Prasad"
+      ],
+      "cinematographer": [
+        "Shamdat"
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-07",
+      "running_time_minutes": 151,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹75–90 crore",
+      "box_office": "₹100 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Brahma Anandam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "RVS Nikhil"
+    ],
+    "story_by": [
+      "RVS Nikhil"
+    ],
+    "screenplay": [
+      "RVS Nikhil"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rahul Yadav Nakka"
+    ],
+    "production_company": [
+      "Swadharm Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sandilya Pisapati"
+      ],
+      "cinematographer": [
+        "Mithesh Parvathaneni"
+      ],
+      "editors": [
+        "Praneeth Kumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-14",
+      "running_time_minutes": 148,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Laila (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Ram Narayan"
+    ],
+    "story_by": [
+      "Vasudeva Murthy"
+    ],
+    "screenplay": [
+      "Vasudeva Murthy"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sahu Garapati"
+    ],
+    "production_company": [
+      "Shine Screens"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Leon James"
+      ],
+      "cinematographer": [
+        "Richard Prasad"
+      ],
+      "editors": [
+        "Sagar Dadi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-14",
+      "running_time_minutes": 136,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹4 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Nidurinchu Jahapana",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Prasanna Kumar Devarapalli"
+    ],
+    "story_by": [
+      "Prasanna Kumar Devarapalli"
+    ],
+    "screenplay": [
+      "Prasanna Kumar Devarapalli"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sam",
+      "G. Vamsi Krishna Varma"
+    ],
+    "production_company": [
+      "AR Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Anup Rubens"
+      ],
+      "cinematographer": [
+        "Anand Reddy Nadakatla"
+      ],
+      "editors": [
+        "Nani Babu Karumanchi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Thala (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Amma Rajashekar"
+    ],
+    "story_by": [
+      "Amma Rajashekar"
+    ],
+    "screenplay": [
+      "Amma Rajashekar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sreenivasa Goud"
+    ],
+    "production_company": [
+      "Deepa Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Aslam keyi",
+        "Dharma Teja"
+      ],
+      "cinematographer": [
+        "Shyam K. Naidu"
+      ],
+      "editors": [
+        "Shiva Sarni"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Baapu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Daya"
+    ],
+    "story_by": [
+      "Daya"
+    ],
+    "screenplay": [
+      "Daya"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Raju",
+      "Ch Bhanu Prasad Reddy"
+    ],
+    "production_company": [
+      "Comrade Film Factory",
+      "Atheera Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "RR Dhruvan"
+      ],
+      "cinematographer": [
+        "Vasu Pendem"
+      ],
+      "editors": [
+        "Aalayam Anil"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-21",
+      "running_time_minutes": 120,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Ramam Raghavam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Drama"
+    ],
+    "director": [
+      "Dhanraj Koranani"
+    ],
+    "story_by": [
+      "Siva Prasad Yanala"
+    ],
+    "screenplay": [
+      "Siva Prasad Yanala"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Prudhvi Polavarapu"
+    ],
+    "production_company": [
+      "Slate Pencil Stories"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Arun Chiluveru"
+      ],
+      "cinematographer": [
+        "Durga Prasad Kolli"
+      ],
+      "editors": [
+        "Marthand K. Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-21",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mazaka",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Trinadha Rao Nakkina"
+    ],
+    "story_by": [
+      "Prasanna Kumar Bezawada"
+    ],
+    "screenplay": [
+      "Prasanna Kumar Bezawada",
+      "Sai Krishna"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Anil Sunkara",
+      "Ramabrahmam Sunkara",
+      "Razesh Danda",
+      "Balaji Gutta",
+      "Umesh KR Bansal"
+    ],
+    "production_company": [
+      "AK Entertainments",
+      "Hasya Movies",
+      "Zee Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Leon James"
+      ],
+      "cinematographer": [
+        "Nizar Shafi"
+      ],
+      "editors": [
+        "Chota K. Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-02-26",
+      "running_time_minutes": 149,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹12.75 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "14 Days Girlfriend Intlo",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Sriharsha Manne"
+    ],
+    "story_by": [
+      "Sriharsha Manne"
+    ],
+    "screenplay": [
+      "Sriharsha Manne"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Satya Komal N"
+    ],
+    "production_company": [
+      "Satya Arts Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mark K. Robin"
+      ],
+      "cinematographer": [
+        "K Soma Sekhar"
+      ],
+      "editors": [
+        "Pradeep R Moram"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 90,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Jigel",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Malli Yeluri"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Y Jagan Mohan",
+      "Allam Nagarjuna"
+    ],
+    "production_company": [
+      "Apple Creations",
+      "Sri Indira Combines"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mantra Anand"
+      ],
+      "cinematographer": [
+        "Vasu"
+      ],
+      "editors": [
+        "Kotagiri Venkateswara Rao"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Naari: The Women",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [],
+    "director": [
+      "Surya Vantipalli"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Sashi Vantipalli"
+    ],
+    "production_company": [
+      "SHE Films",
+      "Hyderabad Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vinod Kumar Vinnu"
+      ],
+      "cinematographer": [
+        "Bhim Samba",
+        "V.Ravi Kumar"
+      ],
+      "editors": [
+        "Madhav Kumar Gullapalli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Shivangi Lioness",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Drama"
+    ],
+    "director": [
+      "Devaraj Bharani Dharan"
+    ],
+    "story_by": [
+      "Devaraj Bharani Dharan"
+    ],
+    "screenplay": [
+      "Devaraj Bharani Dharan"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naresh Babu Panchumarthi"
+    ],
+    "production_company": [
+      "First Copy Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "A. H. Kaashif"
+      ],
+      "cinematographer": [
+        "Bharani K Dharan"
+      ],
+      "editors": [
+        "Samjith Mohammed"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 122,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Viral Prapancham",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Brijesh Tangi"
+    ],
+    "story_by": [
+      "Brijesh Tangi",
+      "Vijaya",
+      "Lalith Bankupally"
+    ],
+    "screenplay": [
+      "Brijesh Tangi",
+      "Vijaya",
+      "Lalith Bankupally"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Akhil Tangi",
+      "GS",
+      "Anil Moduga"
+    ],
+    "production_company": [
+      "Revolutionary Talkies",
+      "Anil Moduga Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Gyaani"
+      ],
+      "cinematographer": [
+        "Varun Ankarla"
+      ],
+      "editors": [
+        "GS"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 97,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "W/O Anirvesh",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Ganga Sapthasikhara"
+    ],
+    "story_by": [
+      "Ganga Sapthasikhara"
+    ],
+    "screenplay": [
+      "Ganga Sapthasikhara"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Merugu Venkateshwarlu",
+      "Mahendra Gajendra"
+    ],
+    "production_company": [
+      "Gajendra Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Shanmukh Srinivas Pydi"
+      ],
+      "cinematographer": [
+        "Naidu VRK"
+      ],
+      "editors": [
+        "Hemanth Nag"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "1000 Waala",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Afzal Shaik"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Sharukh"
+    ],
+    "production_company": [
+      "Super Hit Movie Makers"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "VamsiKanth Rekhana"
+      ],
+      "cinematographer": [
+        "Chandu Aj"
+      ],
+      "editors": [
+        "Ravi Teja"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Court: State vs a Nobody",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Ram Jagadeesh"
+    ],
+    "story_by": [
+      "Ram Jagadeesh"
+    ],
+    "screenplay": [
+      "Ram Jagadeesh",
+      "Karthikeya Sreenivass",
+      "Vamsidhar Sirigiri"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Prashanti Tipirneni"
+    ],
+    "production_company": [
+      "Wall Poster Cinema"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vijai Bulganin"
+      ],
+      "cinematographer": [
+        "Dinesh Purushothaman"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-14",
+      "running_time_minutes": 149,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹4–5 crore",
+      "box_office": "est. ₹57–58.15 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Dilruba (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Viswa Karun"
+    ],
+    "story_by": [
+      "Viswa Karun"
+    ],
+    "screenplay": [
+      "Viswa Karun"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vikram Mehra",
+      "Siddharth Anand Kumar",
+      "Ravi",
+      "Jojo Jose",
+      "Rakesh Reddy"
+    ],
+    "production_company": [
+      "Sivam Celluloids",
+      "Yoodlee Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sam C. S."
+      ],
+      "cinematographer": [
+        "Viswas Daniel"
+      ],
+      "editors": [
+        "Praveen K. L."
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-14",
+      "running_time_minutes": 152,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Anaganaga Australia Lo",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Taraka Rama"
+    ],
+    "story_by": [
+      "Taraka Rama"
+    ],
+    "screenplay": [
+      "Taraka Rama"
+    ],
+    "dialogues": [],
+    "producers": [
+      "B.T.R Srinivsarao",
+      "Madhavi Mangapati",
+      "Yarik Studios"
+    ],
+    "production_company": [
+      "Sahaana Art Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "U.V Niranjan"
+      ],
+      "cinematographer": [
+        "Arun Dondapati"
+      ],
+      "editors": [
+        "Taraka Rama"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-21",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kaalamega Karigindhi",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Singara Mohan"
+    ],
+    "story_by": [
+      "Singara Mohan"
+    ],
+    "screenplay": [
+      "Singara Mohan"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Mare Siva Shankar"
+    ],
+    "production_company": [
+      "Singaara Creative Works"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Gudappan"
+      ],
+      "cinematographer": [
+        "Vineeth Pabbathi"
+      ],
+      "editors": [
+        "Ra Yogesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-21",
+      "running_time_minutes": 110,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Pelli Kani Prasad",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Abhilash Reddy Gopidi"
+    ],
+    "story_by": [
+      "Akhil Varma",
+      "Y. N. Lohit"
+    ],
+    "screenplay": [
+      "Abhilash Reddy Gopidi",
+      "Akhil Varma",
+      "Y. N. Lohit"
+    ],
+    "dialogues": [],
+    "producers": [
+      "K. Y. Babu",
+      "Bhabu Prakash Goud",
+      "Sukka Venkateshwar Goud",
+      "Vaibhav Reddy Mutyala"
+    ],
+    "production_company": [
+      "Thama Media"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sekar Chandra"
+      ],
+      "cinematographer": [
+        "Sujatha Siddharth"
+      ],
+      "editors": [
+        "Madhu"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-21",
+      "running_time_minutes": 118,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Tuk Tuk (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Supreeth C Krishna"
+    ],
+    "story_by": [
+      "Supreeth C Krishna"
+    ],
+    "screenplay": [
+      "Supreeth C Krishna"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rahul Reddy D.",
+      "Lokku Sri Varun",
+      "C. Sreeramulu Reddy"
+    ],
+    "production_company": [
+      "Chithravaahini Productions",
+      "RYG Cinemas"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Santhu Omkar"
+      ],
+      "cinematographer": [
+        "Karthik Saikumar"
+      ],
+      "editors": [
+        "Ashwath Shivkumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-21",
+      "running_time_minutes": 128,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Shanmukha (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Shanmugam Sappani"
+    ],
+    "story_by": [
+      "Satish Aketi"
+    ],
+    "screenplay": [
+      "Shanmugam Sappani"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Tulasi Ram Sappani",
+      "Shanmugam Sappani",
+      "Ramesh Yadav"
+    ],
+    "production_company": [
+      "Sapbro Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Ravi Basrur"
+      ],
+      "cinematographer": [
+        "RR Vishnu",
+        "Krishna Murali"
+      ],
+      "editors": [
+        "M. A. Malik"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-21",
+      "running_time_minutes": 121,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Robinhood (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Venky Kudumula"
+    ],
+    "story_by": [
+      "Venky Kudumula"
+    ],
+    "screenplay": [
+      "Venky Kudumula"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naveen Yerneni",
+      "Yalamanchili Ravi Shankar"
+    ],
+    "production_company": [
+      "Mythri Movie Makers"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "G. V. Prakash Kumar"
+      ],
+      "cinematographer": [
+        "Sai Sriram"
+      ],
+      "editors": [
+        "Koti"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-28",
+      "running_time_minutes": 156,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹60 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mad Square",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Kalyan Shankar"
+    ],
+    "story_by": [
+      "Kalyan Shankar"
+    ],
+    "screenplay": [
+      "Kalyan Shankar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naga Vamsi"
+    ],
+    "production_company": [
+      "Sithara Entertainments",
+      "Fortune Four Cinemas",
+      "Srikara Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score",
+        "Thaman S",
+        "Songs",
+        "Bheems Ceciroleo"
+      ],
+      "cinematographer": [
+        "Shamdat"
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-03-28",
+      "running_time_minutes": 127,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "28 Degree Celsius",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Anil Vishwanath"
+    ],
+    "story_by": [
+      "Anil Vishwanath"
+    ],
+    "screenplay": [
+      "Anil Vishwanath"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sai Abhishek"
+    ],
+    "production_company": [
+      "Veeranjaneya Productions",
+      "Riverside Cinemas"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score:",
+        "Sricharan Pakala",
+        "Songs:",
+        "Shravan Bharadwaj"
+      ],
+      "cinematographer": [
+        "Vamsi Patchipulusu"
+      ],
+      "editors": [
+        "Garry BH"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-04",
+      "running_time_minutes": 119,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "LYF: Love Your Father",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Pavan Ketharaju"
+    ],
+    "story_by": [
+      "Pavan Ketharaju"
+    ],
+    "screenplay": [
+      "Pavan Ketharaju"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Annapareddy Samrajyam",
+      "Annapareddy Chetan Sai",
+      "Kishore Rathi",
+      "Mahesh Rathi"
+    ],
+    "production_company": [
+      "Manisha Arts and Media",
+      "Annapareddy Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mani Sharma"
+      ],
+      "cinematographer": [
+        "Sam K Naidu"
+      ],
+      "editors": [
+        "Devarampati Siva Rama Krishna"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-04",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Jack (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Bommarillu Bhaskar"
+    ],
+    "story_by": [
+      "Bommarillu Bhaskar"
+    ],
+    "screenplay": [
+      "Bommarillu Bhaskar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "B. V. S. N. Prasad"
+    ],
+    "production_company": [
+      "Sri Venkateswara Cine Chitra"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Achu Rajamani",
+        "Sam C. S.",
+        "Suresh Bobbili"
+      ],
+      "cinematographer": [
+        "Vijay K. Chakravarthy"
+      ],
+      "editors": [
+        "Navin Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-10",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Akkada Ammayi Ikkada Abbayi (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Nitin",
+      "Bharath"
+    ],
+    "story_by": [
+      "Sandeep Bolla"
+    ],
+    "screenplay": [
+      "Nitin",
+      "Bharath"
+    ],
+    "dialogues": [],
+    "producers": [],
+    "production_company": [
+      "Monks & Monkeys"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Radhan"
+      ],
+      "cinematographer": [
+        "M. N. Balreddy"
+      ],
+      "editors": [
+        "Kodati Pavan Kalyan"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-11",
+      "running_time_minutes": 147,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Odela 2",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Ashok Teja"
+    ],
+    "story_by": [
+      "Sampath Nandi"
+    ],
+    "screenplay": [
+      "Sampath Nandi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "D. Madhu",
+      "Sampath Nandi"
+    ],
+    "production_company": [
+      "Madhu Creations",
+      "Sampath Nandi Teamworks"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "B. Ajaneesh Loknath"
+      ],
+      "cinematographer": [
+        "Soundararajan"
+      ],
+      "editors": [
+        "Avinash"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-17",
+      "running_time_minutes": 150,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹25 crore (US$2.6 million)",
+      "box_office": "₹7.07 crore (US$730,000)"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Arjun Son of Vyjayanthi",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Pradeep Chilukuri"
+    ],
+    "story_by": [
+      "Pradeep Chilukuri"
+    ],
+    "screenplay": [
+      "Pradeep Chilukuri",
+      "Srikanth Vissa"
+    ],
+    "dialogues": [
+      "Srikanth Vissa"
+    ],
+    "producers": [
+      "Ashok Vardhan Muppa",
+      "Sunil Balusu",
+      "Nandamuri Kalyan Ram"
+    ],
+    "production_company": [
+      "N. T. R. Arts",
+      "Ashoka Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "B. Ajaneesh Loknath"
+      ],
+      "cinematographer": [
+        "C. Ram Prasad",
+        "Additional Cinematography:",
+        "Prasad Murella"
+      ],
+      "editors": [
+        "Tammiraju"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-18",
+      "running_time_minutes": 144,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "est.₹7.1 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Dear Uma",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Sai Rajesh Mahadev"
+    ],
+    "story_by": [
+      "Sumaya Reddy"
+    ],
+    "screenplay": [
+      "Sai Rajesh Mahadev"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sumaya Reddy"
+    ],
+    "production_company": [
+      "Suma Chitra Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Radhan"
+      ],
+      "cinematographer": [
+        "Raj Thota"
+      ],
+      "editors": [
+        "Satya Giduturi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-18",
+      "running_time_minutes": 154,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Chaurya Paatham",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Nikhil Gollamari"
+    ],
+    "story_by": [
+      "Karthik Gattamneni"
+    ],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Trinadha Rao Nakkina"
+    ],
+    "production_company": [
+      "Nakkina Narratives"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Davzand"
+      ],
+      "cinematographer": [
+        "Karthik Gattamneni"
+      ],
+      "editors": [
+        "Uthura Parthasarathy"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-25",
+      "running_time_minutes": 124,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Sarangapani Jathakam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Mohanakrishna Indraganti"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Sivalenka Krishna Prasad"
+    ],
+    "production_company": [
+      "Sridevi Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vivek Sagar"
+      ],
+      "cinematographer": [
+        "P. G. Vinda"
+      ],
+      "editors": [
+        "Marthand K Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-04-25",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹5.65 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "HIT: The Third Case",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Sailesh Kolanu"
+    ],
+    "story_by": [
+      "Sailesh Kolanu"
+    ],
+    "screenplay": [
+      "Sailesh Kolanu"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Prashanti Tipirneni",
+      "Nani"
+    ],
+    "production_company": [
+      "Wall Poster Cinema",
+      "Unanimous Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mickey J. Meyer"
+      ],
+      "cinematographer": [
+        "Sanu John Varghese"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-01",
+      "running_time_minutes": 157,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹70 crore",
+      "box_office": "₹120.58 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Blind Spot (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Rakesh Varma"
+    ],
+    "story_by": [
+      "Rakesh Varma"
+    ],
+    "screenplay": [
+      "Rakesh Varma"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rama Krishna Veerapaneni"
+    ],
+    "production_company": [
+      "Mango Mass Media"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sriram Maddury"
+      ],
+      "cinematographer": [
+        "Darshan M Ambat"
+      ],
+      "editors": [
+        "Satyaa G"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-09",
+      "running_time_minutes": 89,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kaliyugam (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Pramodh Sundar"
+    ],
+    "story_by": [
+      "Karthik Gunasekaran",
+      "Athreya",
+      "Karkavi"
+    ],
+    "screenplay": [
+      "Karthik Gunasekaran",
+      "Athreya",
+      "Karkavi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "K. S. Ramakrishna",
+      "K. Ramcharan"
+    ],
+    "production_company": [
+      "RK International",
+      "Prime Cinemas"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Dawn Vincent"
+      ],
+      "cinematographer": [
+        "K. Ramcharan"
+      ],
+      "editors": [
+        "Nimz"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-09",
+      "running_time_minutes": 111,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Single (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Caarthick Raju"
+    ],
+    "story_by": [
+      "Caarthick Raju"
+    ],
+    "screenplay": [
+      "Caarthick Raju"
+    ],
+    "dialogues": [
+      "Nandu Savirigana",
+      "Bhanu Bogavarapu"
+    ],
+    "producers": [
+      "Vidya Koppineedi",
+      "Bhanu Pratapa",
+      "Riyaz Chowdary"
+    ],
+    "production_company": [
+      "Geetha Arts",
+      "Kalya Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vishal Chandrashekhar"
+      ],
+      "cinematographer": [
+        "R. Velraj"
+      ],
+      "editors": [
+        "Praveen K. L."
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-09",
+      "running_time_minutes": 129,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹34.65 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Subham",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "director": [
+      "Praveen Kandregula"
+    ],
+    "story_by": [
+      "Vasanth Maringanti"
+    ],
+    "screenplay": [
+      "Vasanth Maringanti"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Samantha Ruth Prabhu",
+      "Himank Reddy Duvvuru"
+    ],
+    "production_company": [
+      "Tralala Moving Pictures",
+      "Kanakavalli Talkies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score:",
+        "Vivek Sagar",
+        "Songs:",
+        "Shor Police"
+      ],
+      "cinematographer": [
+        "Mridul Sujit Sen"
+      ],
+      "editors": [
+        "Dharmendra Kakarala"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-09",
+      "running_time_minutes": 125,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Anaganaga (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Sunny Sanjay"
+    ],
+    "story_by": [
+      "Sunny Sanjay"
+    ],
+    "screenplay": [
+      "Sunny Sanjay"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rakesh Reddy Gadam",
+      "Rudradev Madireddy"
+    ],
+    "production_company": [
+      "Krishi Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Chandu Ravi"
+      ],
+      "cinematographer": [
+        "Pavan Kumar Pappula"
+      ],
+      "editors": [
+        "Venkatesh Chunduru"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-15",
+      "running_time_minutes": 136,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "23 Iravai Moodu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Raj Rachakonda"
+    ],
+    "story_by": [
+      "Raj Rachakonda"
+    ],
+    "screenplay": [
+      "Raj Rachakonda"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Raj Rachakonda"
+    ],
+    "production_company": [
+      "Studio 99"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mark K Robin"
+      ],
+      "cinematographer": [
+        "Sunny Kurapati"
+      ],
+      "editors": [
+        "Anil Aalayam"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-16",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Eleven (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [],
+    "director": [
+      "Lokkesh Ajls"
+    ],
+    "story_by": [
+      "Lokkesh Ajls"
+    ],
+    "screenplay": [
+      "Lokkesh Ajls"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ajmal Khan",
+      "Reyaa Hari",
+      "Prabhu Solomon (Creative Producer)"
+    ],
+    "production_company": [
+      "AR Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "D. Imman"
+      ],
+      "cinematographer": [
+        "Karthik Ashokan"
+      ],
+      "editors": [
+        "N. B. Srikanth"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-16",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Oka Brundavanam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Sathya Botcha"
+    ],
+    "story_by": [
+      "Chetan Bandi"
+    ],
+    "screenplay": [
+      "Chetan Bandi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Kishore Tatikonda",
+      "Venkat Regatte",
+      "Bommineni Venkata Prahalad (BVP)",
+      "Manoj Indupuru"
+    ],
+    "production_company": [
+      "Seer Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sunny",
+        "Saketh"
+      ],
+      "cinematographer": [
+        "Raj K Nalli"
+      ],
+      "editors": [
+        "Tammiraju",
+        "Santhosh Kammireddy"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-23",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Vaibhavam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Sathvik"
+    ],
+    "story_by": [
+      "Sathvik"
+    ],
+    "screenplay": [
+      "Sathvik"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ruthvik",
+      "Sathvik"
+    ],
+    "production_company": [
+      "Rama Devi Productions LLP"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sathvik"
+      ],
+      "cinematographer": [
+        "Sriram Mukkapati",
+        "Praveen Subramanyam"
+      ],
+      "editors": [
+        "Sathvik"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-23",
+      "running_time_minutes": 134,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Bhairavam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Vijay Kanakamedala"
+    ],
+    "story_by": [
+      "R. S. Durai Senthilkumar"
+    ],
+    "screenplay": [
+      "R. S. Durai Senthilkumar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "K. K. Radhamohan"
+    ],
+    "production_company": [
+      "Sri Sathya Sai Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sricharan Pakala"
+      ],
+      "cinematographer": [
+        "Hari K. Vedantam"
+      ],
+      "editors": [
+        "Chota K. Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-30",
+      "running_time_minutes": 155,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹16.75 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Shashtipoorthi",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Pavan Prabha"
+    ],
+    "story_by": [
+      "Pavan Prabha"
+    ],
+    "screenplay": [
+      "Pavan Prabha"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rupesh Kumar Choudhary"
+    ],
+    "production_company": [
+      "Maai Aaie Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Ilayaraja"
+      ],
+      "cinematographer": [
+        "Raam"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-30",
+      "running_time_minutes": 145,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Ghatikachalam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Horror"
+    ],
+    "director": [
+      "Amar Kamepalli"
+    ],
+    "story_by": [
+      "MC Raju"
+    ],
+    "screenplay": [
+      "Amar Kamepalli"
+    ],
+    "dialogues": [],
+    "producers": [
+      "MC Raju"
+    ],
+    "production_company": [
+      "Oasis Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Flavio G. Cuccurullo"
+      ],
+      "cinematographer": [
+        "SS Manoj"
+      ],
+      "editors": [
+        "Srinivas Bainaboyina"
+      ]
+    },
+    "release_details": {
+      "date": "2025-05-31",
+      "running_time_minutes": 118,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Badmashulu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [],
+    "director": [
+      "Shankar Cheguri"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "C.Rama Shankar"
+    ],
+    "production_company": [
+      "Thara Story Tellers"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Teja Kunuru"
+      ],
+      "cinematographer": [
+        "Vineeth Pabbathi"
+      ],
+      "editors": [
+        "Gajjala Rakshith Kumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-06",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Gamblers (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [],
+    "director": [
+      "KSK Chaitanya"
+    ],
+    "story_by": [
+      "Vijay Chitneedi"
+    ],
+    "screenplay": [
+      "KSK Chaitanya",
+      "Vijay Chitneedi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sunitha Rajkumar Brindavan"
+    ],
+    "production_company": [
+      "Reshmas Studios",
+      "Snap & Clap Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sashank Tirupathi"
+      ],
+      "cinematographer": [
+        "Prem Sagar"
+      ],
+      "editors": []
+    },
+    "release_details": {
+      "date": "2025-06-06",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Paderu 12th Mile",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Nooka Sahibu"
+    ],
+    "story_by": [
+      "Nooka Sahibu"
+    ],
+    "screenplay": [
+      "Nooka Sahibu"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Grandhi Trinadh"
+    ],
+    "production_company": [
+      "Sai Lakshmi Ganapathi Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Peddapalli Rohith"
+      ],
+      "cinematographer": [
+        "Girinaduni Amar"
+      ],
+      "editors": [
+        "Shiva Sharvani"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-06",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Sri Sri Sri Raja Vaaru",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Satish Vegesna"
+    ],
+    "story_by": [
+      "Satish Vegesna"
+    ],
+    "screenplay": [
+      "Satish Vegesna"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Chinthapalli Ramarao"
+    ],
+    "production_company": [
+      "Sri Vedakshara Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Kailas Menon"
+      ],
+      "cinematographer": [
+        "Damu Narravula"
+      ],
+      "editors": [
+        "Madhu"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-06",
+      "running_time_minutes": 122,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kuberaa",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Sekhar Kammula"
+    ],
+    "story_by": [
+      "Sekhar Kammula",
+      "Chaithanya Pingali"
+    ],
+    "screenplay": [
+      "Sekhar Kammula",
+      "Chaithanya Pingali"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Suniel Narang",
+      "Puskur Ram Mohan Rao",
+      "Ajay Kaikala"
+    ],
+    "production_company": [
+      "Sree Venkateswara Cinemas LLP",
+      "Amigos Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Devi Sri Prasad"
+      ],
+      "cinematographer": [
+        "Niketh Bommi"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-20",
+      "running_time_minutes": 181,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "est. ₹120–150 crore",
+      "box_office": "est. ₹115–132 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "8 Vasantalu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Phanindra Narsetti"
+    ],
+    "story_by": [
+      "Phanindra Narsetti"
+    ],
+    "screenplay": [
+      "Phanindra Narsetti"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naveen Yerneni",
+      "Y. Ravi Shankar"
+    ],
+    "production_company": [
+      "Mythri Movie Makers"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Hesham Abdul Wahab"
+      ],
+      "cinematographer": [
+        "Vishwanath Reddy Chelumalla"
+      ],
+      "editors": [
+        "Shashank Mali"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-20",
+      "running_time_minutes": 137,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kannappa (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Epic"
+    ],
+    "director": [
+      "Mukesh Kumar Singh"
+    ],
+    "story_by": [
+      "Vishnu Manchu"
+    ],
+    "screenplay": [
+      "Vishnu Manchu",
+      "Paruchuri Gopala Krishna",
+      "G. Eshwar Reddy",
+      "G. Nageswara Reddy",
+      "Thota Prasad",
+      "Akella Shiva Prasad",
+      "Mihir Bhuta"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Mohan Babu"
+    ],
+    "production_company": [
+      "AVA Entertainment",
+      "24 Frames Factory"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Stephen Devassy"
+      ],
+      "cinematographer": [
+        "Sheldon Chau"
+      ],
+      "editors": [
+        "Anthony"
+      ]
+    },
+    "release_details": {
+      "date": "2025-06-27",
+      "running_time_minutes": 182,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹200 crore",
+      "box_office": "₹46 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Thammudu (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Venu Sriram"
+    ],
+    "story_by": [
+      "Venu Sriram"
+    ],
+    "screenplay": [
+      "Venu Sriram"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Dil Raju",
+      "Sirish"
+    ],
+    "production_company": [
+      "Sri Venkateswara Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "B. Ajaneesh Loknath"
+      ],
+      "cinematographer": [
+        "K. V. Guhan",
+        "Sameer Reddy",
+        "Satyajit Pande (Setu)"
+      ],
+      "editors": [
+        "Prawin Pudi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-04",
+      "running_time_minutes": 154,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹75 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Uppu Kappurambu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Ani I. V. Sasi"
+    ],
+    "story_by": [
+      "Vasanth Maringanti"
+    ],
+    "screenplay": [
+      "Vasanth Maringanti"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Radhika Lavu"
+    ],
+    "production_company": [
+      "Ellanar Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sweekar Agasthi"
+      ],
+      "cinematographer": [
+        "Divakar Mani"
+      ],
+      "editors": [
+        "Sreejith Sarang"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-04",
+      "running_time_minutes": 136,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Show Time (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Madhankumar Dhakshinamoorthy"
+    ],
+    "story_by": [
+      "Madhankumar Dhakshinamoorthy"
+    ],
+    "screenplay": [
+      "Madhankumar Dhakshinamoorthy"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Kishore Garikipati"
+    ],
+    "production_company": [
+      "SkyLine Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Shekar Chandra"
+      ],
+      "cinematographer": [
+        "Vinod Raja Thiyagaraja"
+      ],
+      "editors": [
+        "Sarath Kumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-04",
+      "running_time_minutes": 108,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Solo Boy",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "P. Naveen Kumar"
+    ],
+    "story_by": [
+      "P. Naveen Kumar"
+    ],
+    "screenplay": [
+      "P. Naveen Kumar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sevenhills Satish"
+    ],
+    "production_company": [
+      "Sevenhills Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Judah Sandhy"
+      ],
+      "cinematographer": [
+        "Thrilok Siddu"
+      ],
+      "editors": [
+        "Prawin Pudi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-04",
+      "running_time_minutes": 133,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "The 100 (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Raghav Omkar Sasidhar"
+    ],
+    "story_by": [
+      "Raghav Omkar Sasidhar"
+    ],
+    "screenplay": [
+      "Raghav Omkar Sasidhar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ramesh Karutoori",
+      "Venki Pushadapu",
+      "J. Tharak Ram"
+    ],
+    "production_company": [
+      "Kria Film Corp",
+      "Dhamma Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Harshavardhan Rameshwar"
+      ],
+      "cinematographer": [
+        "Shyam K. Naidu"
+      ],
+      "editors": [
+        "Amar Reddy Kudumula"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-11",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Oh Bhama Ayyo Rama",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Ram Godhala"
+    ],
+    "story_by": [
+      "Ram Godhala"
+    ],
+    "screenplay": [
+      "Ram Godhala"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Harish Nalla"
+    ],
+    "production_company": [
+      "V ARTS"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Radhan"
+      ],
+      "cinematographer": [
+        "S. Manikandan"
+      ],
+      "editors": [
+        "Bhavin M. Shah"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-11",
+      "running_time_minutes": 155,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Junior (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Radha Krishna Reddy"
+    ],
+    "story_by": [
+      "Radha Krishna Reddy"
+    ],
+    "screenplay": [
+      "Radha Krishna Reddy"
+    ],
+    "dialogues": [
+      "Kalyan Chakravarthi"
+    ],
+    "producers": [
+      "Sai Korrapati"
+    ],
+    "production_company": [
+      "Vaaraahi Chalana Chitram"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Devi Sri Prasad"
+      ],
+      "cinematographer": [
+        "K. K. Senthil Kumar"
+      ],
+      "editors": [
+        "Niranjan Devaramane"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-18",
+      "running_time_minutes": 154,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹25 crore",
+      "box_office": "₹16 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kothapallilo Okappudu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Praveena Paruchuri"
+    ],
+    "story_by": [
+      "Guru Kiran Bathula"
+    ],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Gopalakrishna Paruchuri",
+      "Praveena Paruchuri",
+      "Rana Daggubati (presenter)"
+    ],
+    "production_company": [
+      "Paruchuri Vijaya Praveena Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score:",
+        "Varun Unni",
+        "Songs:",
+        "Mani Sharma"
+      ],
+      "cinematographer": [
+        "Petros Antoniadis"
+      ],
+      "editors": [
+        "Kiran R."
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-18",
+      "running_time_minutes": 123,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Hari Hara Veera Mallu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action"
+    ],
+    "director": [
+      "A. M. Jyothi Krishna",
+      "Krish Jagarlamudi"
+    ],
+    "story_by": [
+      "A. M. Jyothi Krishna",
+      "Krish Jagarlamudi"
+    ],
+    "screenplay": [
+      "A. M. Jyothi Krishna",
+      "Krish Jagarlamudi"
+    ],
+    "dialogues": [
+      "Sai Madhav Burra"
+    ],
+    "producers": [
+      "A. Dayakar Rao",
+      "A. M. Rathnam"
+    ],
+    "production_company": [
+      "Mega Surya Production"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "M. M. Keeravani"
+      ],
+      "cinematographer": [
+        "Manoj Paramahamsa",
+        "Gnana Shekar V. S."
+      ],
+      "editors": [
+        "Praveen K. L."
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-24",
+      "running_time_minutes": 161,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹250–300 crore",
+      "box_office": "₹113.85 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mahavatar Narsimha",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Epic",
+      "Mythological",
+      "Action"
+    ],
+    "director": [
+      "Ashwin Kumar"
+    ],
+    "story_by": [
+      "Jayapurna Das Ashwin Kumar"
+    ],
+    "screenplay": [
+      "Jayapurna Das Ashwin Kumar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Shilpaa Dhawan",
+      "Kushal Desai",
+      "Chaitanya Desai"
+    ],
+    "production_company": [
+      "Kleem Productions",
+      "Hombale Films (presenters only)"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sam C. S.",
+        "[",
+        "3",
+        "]"
+      ],
+      "cinematographer": [],
+      "editors": [
+        "Ashwin Kumar",
+        "Ajay Varma"
+      ]
+    },
+    "release_details": {
+      "date": "2024-11-25",
+      "running_time_minutes": 131,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹20 crore",
+      "box_office": "₹300–325 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kingdom (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Gowtam Tinnanuri"
+    ],
+    "story_by": [
+      "Gowtam Tinnanuri"
+    ],
+    "screenplay": [
+      "Gowtam Tinnanuri"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naga Vamsi Sai Soujanya Aravind Aendapally",
+      "Naga Vamsi",
+      "Sai Soujanya",
+      "Aravind Aendapally"
+    ],
+    "production_company": [
+      "Sithara Entertainments Fortune Four Creations Srikara Studios",
+      "Sithara Entertainments",
+      "Fortune Four Creations",
+      "Srikara Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Anirudh Ravichander"
+      ],
+      "cinematographer": [
+        "Girish Gangadharan Jomon T. John",
+        "Girish Gangadharan",
+        "Jomon T. John"
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-07-31",
+      "running_time_minutes": 160,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹130 crore",
+      "box_office": "₹82.02 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Thank You Dear",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Thota Srikanth Kumar"
+    ],
+    "story_by": [
+      "Thota Srikanth Kumar"
+    ],
+    "screenplay": [
+      "Thota Srikanth Kumar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Pappu Balaji Reddy"
+    ],
+    "production_company": [
+      "Mahalakshmi Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Subhash Anand"
+      ],
+      "cinematographer": [
+        "P. L. K. Reddy"
+      ],
+      "editors": [
+        "Raghavender Pebbeti"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-01",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Bakasura Restaurant",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Horror",
+      "Comedy"
+    ],
+    "director": [
+      "SJ Shiva"
+    ],
+    "story_by": [
+      "SJ Shiva"
+    ],
+    "screenplay": [
+      "SJ Shiva"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Lakshmaiah Achari",
+      "Janardhan Achari"
+    ],
+    "production_company": [
+      "SJ Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vikas Badisa"
+      ],
+      "cinematographer": [
+        "Bala Saraswathi"
+      ],
+      "editors": [
+        "Marthand K. Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-08",
+      "running_time_minutes": 158,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹ 5 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Meghalu Cheppina Prema Katha",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Vipin"
+    ],
+    "story_by": [
+      "Vipin"
+    ],
+    "screenplay": [
+      "Vipin"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Uma Devi Kota"
+    ],
+    "production_company": [
+      "Sunethra Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Justin Prabhakaran"
+      ],
+      "cinematographer": [
+        "Mohana Krishna"
+      ],
+      "editors": [
+        "Marthand K. Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-22",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Paradha",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Praveen Kandregula"
+    ],
+    "story_by": [
+      "Praveen Kandregula",
+      "Poojitha Sreekanti",
+      "Prahaas Boppudi"
+    ],
+    "screenplay": [
+      "Praveen Kandregula",
+      "Poojitha Sreekanti",
+      "Prahaas Boppudi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sreenivasulu P. V.",
+      "Vijay Donkada",
+      "Sridhar Makkuva"
+    ],
+    "production_company": [
+      "Ananda Media"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Gopi Sundar"
+      ],
+      "cinematographer": [
+        "Mridul Sujit Sen"
+      ],
+      "editors": [
+        "Dharmendra Kakarala"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-22",
+      "running_time_minutes": 143,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kanya Kumari (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Srujan Attada"
+    ],
+    "story_by": [
+      "Srujan Attada"
+    ],
+    "screenplay": [
+      "Srujan Attada"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Srujan Attada",
+      "Sateesh Reddy Chinta"
+    ],
+    "production_company": [
+      "Radical Pictures"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Ravi Nidamarthy"
+      ],
+      "cinematographer": [
+        "Shiva Gajula",
+        "Haricharan K"
+      ],
+      "editors": [
+        "Naresh Adupa"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-27",
+      "running_time_minutes": 133,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Sundarakanda (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Venkatesh Nimmalapudi"
+    ],
+    "story_by": [
+      "Venkatesh Nimmalapudi"
+    ],
+    "screenplay": [
+      "Venkatesh Nimmalapudi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Santhosh Chinnapolla",
+      "Gowtham Reddy",
+      "Rakesh Mahankalli"
+    ],
+    "production_company": [
+      "Sandeep Picture Palace"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Leon James"
+      ],
+      "cinematographer": [
+        "Pradeesh M. Varma"
+      ],
+      "editors": [
+        "Rohan Chillale"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-27",
+      "running_time_minutes": 137,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Arjun Chakravarthy",
+    "year": 2024,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Vikrant Rudra"
+    ],
+    "story_by": [
+      "Vikrant Rudra"
+    ],
+    "screenplay": [
+      "Vikrant Rudra"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Srini Gubbala"
+    ],
+    "production_company": [],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vignesh Baskaran"
+      ],
+      "cinematographer": [
+        "Jagadeesh Cheekati"
+      ],
+      "editors": [
+        "Pradeep Nandan"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-29",
+      "running_time_minutes": 141,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Tribanadhari Barbarik",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Mohan Srivatsa"
+    ],
+    "story_by": [
+      "Mohan Srivatsa"
+    ],
+    "screenplay": [
+      "Mohan Srivatsa"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vijaypal Reddy Adidhala"
+    ],
+    "production_company": [],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Infusion Band"
+      ],
+      "cinematographer": [
+        "Kushendar Ramesh Reddy"
+      ],
+      "editors": [
+        "Marthand K. Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-08-29",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Ghaati",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Krish Jagarlamudi"
+    ],
+    "story_by": [
+      "Chintakindi Srinivas Rao"
+    ],
+    "screenplay": [
+      "Chintakindi Srinivas Rao"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Yeduguru Rajeev Reddy",
+      "Saibabu Jagarlamudi"
+    ],
+    "production_company": [
+      "First Frame Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Nagavelli Vidya Sagar"
+      ],
+      "cinematographer": [
+        "Manojh Reddy Katasani"
+      ],
+      "editors": [
+        "Chanakya Reddy Toorupu"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-05",
+      "running_time_minutes": 155,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Little Hearts (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Sai Marthand"
+    ],
+    "story_by": [
+      "Sai Marthand"
+    ],
+    "screenplay": [
+      "Sai Marthand"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Aditya Hasan"
+    ],
+    "production_company": [
+      "ETV Win",
+      "Bairagi Kathalu"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sinjith Yerramilli"
+      ],
+      "cinematographer": [
+        "Suriya Balaji"
+      ],
+      "editors": [
+        "Sreedhar Sompally"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-05",
+      "running_time_minutes": 128,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Kishkindhapuri",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Horror"
+    ],
+    "director": [
+      "Koushik Pegallapati"
+    ],
+    "story_by": [
+      "Koushik Pegallapati",
+      "Bala Ganesh K.",
+      "Darahas Palakollu"
+    ],
+    "screenplay": [
+      "Koushik Pegallapati",
+      "Bala Ganesh K.",
+      "Darahas Palakollu"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sahu Garapati"
+    ],
+    "production_company": [
+      "Shine Screens"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Chaitan Bharadwaj"
+      ],
+      "cinematographer": [
+        "Chinmay Salaskar"
+      ],
+      "editors": [
+        "Niranjan Devaramane"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-12",
+      "running_time_minutes": 125,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mirai (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "director": [
+      "Karthik Gattamneni"
+    ],
+    "story_by": [
+      "Karthik Gattamneni"
+    ],
+    "screenplay": [
+      "Manibabu Karanam"
+    ],
+    "dialogues": [],
+    "producers": [
+      "T. G. Vishwa Prasad",
+      "Krithi Prasad"
+    ],
+    "production_company": [
+      "Dharma Productions",
+      "People Media Factory"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Gowra Hari"
+      ],
+      "cinematographer": [
+        "Karthik Gattamneni"
+      ],
+      "editors": [
+        "A. Sreekar Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-12",
+      "running_time_minutes": 169,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹60 crore",
+      "box_office": "₹141–150 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Beauty (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "J S S Vardhan"
+    ],
+    "story_by": [
+      "RV Subramanyamm"
+    ],
+    "screenplay": [
+      "RV Subramanyamm"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Adidhala Vijaypal Reddy",
+      "Umesh Kumar Bansal"
+    ],
+    "production_company": [
+      "Vanara Celluloid",
+      "Zee Studios",
+      "A Maruthi Team Product"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vijai Bulganin"
+      ],
+      "cinematographer": [
+        "Shrie Saikumaar Daara"
+      ],
+      "editors": [
+        "S. B. Uddhav"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-19",
+      "running_time_minutes": 139,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "They Call Him OG",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Sujeeth"
+    ],
+    "story_by": [
+      "Sujeeth"
+    ],
+    "screenplay": [
+      "Sujeeth"
+    ],
+    "dialogues": [],
+    "producers": [
+      "D. V. V. Danayya",
+      "Kalyan Dasari"
+    ],
+    "production_company": [
+      "DVV Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Thaman S"
+      ],
+      "cinematographer": [
+        "Ravi K. Chandran",
+        "Manoj Paramahamsa"
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-09-25",
+      "running_time_minutes": 154,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹200–250 crore",
+      "box_office": "₹361.24 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Ari: My Name Is Nobody",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Fantasy"
+    ],
+    "director": [
+      "Jayashankarr"
+    ],
+    "story_by": [
+      "Jayashankarr"
+    ],
+    "screenplay": [
+      "Jayashankarr"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Srinivas Reddy Ramireddy",
+      "Thimmappa Naidu Purimetla",
+      "D. Seshu Maramreddy"
+    ],
+    "production_company": [
+      "Arvy Cinemas",
+      "Sree Cinema Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Anup Rubens"
+      ],
+      "cinematographer": [
+        "G. Krishna Prasad"
+      ],
+      "editors": [
+        "G. Avinash"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-10",
+      "running_time_minutes": 112,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Constable (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Aryan Subhan SK"
+    ],
+    "story_by": [
+      "Aryan Subhan SK"
+    ],
+    "screenplay": [
+      "Aryan Subhan SK"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Balagam Jagadish"
+    ],
+    "production_company": [
+      "Jagruthi Movie Makers"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score",
+        "Gyaani",
+        "Songs",
+        "Subhash Anand"
+      ],
+      "cinematographer": [
+        "Shaik Hazarathaiah"
+      ],
+      "editors": [
+        "Sree Vara Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-10",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mutton Soup",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Ramachandra Vattikuti"
+    ],
+    "story_by": [
+      "Ramachandra Vattikuti"
+    ],
+    "screenplay": [
+      "Ramachandra Vattikuti"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Mallikarjuna Elika",
+      "Sanapala Ramakrishna",
+      "Arun Chandra Vattikuti"
+    ],
+    "production_company": [
+      "Independent Production"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Venky Veena"
+      ],
+      "cinematographer": [
+        "Lokesh Kumar Kadali"
+      ],
+      "editors": [
+        "Lokesh Kumar Kadali"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-10",
+      "running_time_minutes": 132,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Sasivadane",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Sai Mohan Ubbana"
+    ],
+    "story_by": [
+      "Sai Mohan Ubbana"
+    ],
+    "screenplay": [
+      "Sai Mohan Ubbana"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ahiteja Bellamkonda",
+      "Abhilash Reddy Godala"
+    ],
+    "production_company": [
+      "AG Film Company"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score",
+        "Anudeep Dev",
+        "Songs",
+        "Anudeep Dev",
+        "Saravana Vasudevan"
+      ],
+      "cinematographer": [
+        "Saikumar Daara"
+      ],
+      "editors": [
+        "Garry BH"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-10",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mithra Mandali",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Vijayendar S"
+    ],
+    "story_by": [
+      "Vijayendar S"
+    ],
+    "screenplay": [
+      "Vijayendar S"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Kalyan Manthina",
+      "Bhanu Pratapa",
+      "Vijender Reddy Teegala"
+    ],
+    "production_company": [
+      "Sapta Aswa Media Works",
+      "Vyra Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "RR Dhruvan"
+      ],
+      "cinematographer": [
+        "Siddharth SJ"
+      ],
+      "editors": [
+        "Kodati Pavan Kalyan"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-16",
+      "running_time_minutes": 140,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Telusu Kada",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Neeraja Kona"
+    ],
+    "story_by": [
+      "Neeraja Kona"
+    ],
+    "screenplay": [
+      "Neeraja Kona"
+    ],
+    "dialogues": [],
+    "producers": [
+      "T. G. Vishwa Prasad",
+      "Krithi Prasad"
+    ],
+    "production_company": [
+      "People Media Factory"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Thaman S"
+      ],
+      "cinematographer": [
+        "Gnana Shekar V. S."
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-17",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "K-Ramp",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Jains Nani"
+    ],
+    "story_by": [
+      "Jains Nani"
+    ],
+    "screenplay": [
+      "Jains Nani"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Razesh Danda",
+      "Balaji Gutta",
+      "Shiva Bommak"
+    ],
+    "production_company": [
+      "Hasya Movies",
+      "Rudransh Celluloids"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Chaitan Bharadwaj"
+      ],
+      "cinematographer": [
+        "Sateesh Reddy Masam"
+      ],
+      "editors": [
+        "Chota K. Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-18",
+      "running_time_minutes": 141,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "est. ₹27.50 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Baahubali: The Epic",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Epic",
+      "Action"
+    ],
+    "director": [
+      "S. S. Rajamouli"
+    ],
+    "story_by": [
+      "V. Vijayendra Prasad"
+    ],
+    "screenplay": [
+      "S. S. Rajamouli"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Shobu Yarlagadda",
+      "Prasad Devineni"
+    ],
+    "production_company": [
+      "Arka Media Works"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "M. M. Keeravani"
+      ],
+      "cinematographer": [
+        "K. K. Senthil Kumar"
+      ],
+      "editors": [
+        "Vincent Tabaillon",
+        "Bikkina Thammiraju",
+        "Kotagiri Venkateswara Rao"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-31",
+      "running_time_minutes": 225,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹52 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Karmanye Vadhikaraste",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Thriller"
+    ],
+    "director": [
+      "Amardeep Challapalli"
+    ],
+    "story_by": [
+      "Siva Kumar Pelluru"
+    ],
+    "screenplay": [
+      "Amardeep Challapalli"
+    ],
+    "dialogues": [],
+    "producers": [
+      "D. S. S. Durga Prasad"
+    ],
+    "production_company": [
+      "Ushaswini Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Gyani"
+      ],
+      "cinematographer": [
+        "Samala Bhasker"
+      ],
+      "editors": [
+        "Marthand K. Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-31",
+      "running_time_minutes": 119,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mass Jathara",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Comedy"
+    ],
+    "director": [
+      "Bhanu Bogavarapu"
+    ],
+    "story_by": [
+      "Bhanu Bogavarapu"
+    ],
+    "screenplay": [
+      "Bhanu Bogavarapu"
+    ],
+    "dialogues": [
+      "Nandu Savirigana"
+    ],
+    "producers": [
+      "Naga Vamsi",
+      "Sai Sowjanya"
+    ],
+    "production_company": [
+      "Sithara Entertainments",
+      "Fortune Four Cinemas",
+      "Srikara Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Bheems Ceciroleo"
+      ],
+      "cinematographer": [
+        "Vidhu Ayyanna"
+      ],
+      "editors": [
+        "Naveen Nooli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-10-31",
+      "running_time_minutes": 160,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹22.50 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Chiranjeeva",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Fantasy",
+      "Comedy"
+    ],
+    "director": [
+      "Abhinaya Krishna"
+    ],
+    "story_by": [
+      "Abhinaya Krishna"
+    ],
+    "screenplay": [
+      "MS"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Rahul Avudoddi",
+      "Suhasini Rahul"
+    ],
+    "production_company": [
+      "Streamline Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Achu Rajamani"
+      ],
+      "cinematographer": [
+        "Rakesh S Narayan"
+      ],
+      "editors": [
+        "Sai Murali"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 111,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Jatadhara",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Horror",
+      "Comedy"
+    ],
+    "director": [
+      "Venkat Kalyan",
+      "Abhishek Jaiswal"
+    ],
+    "story_by": [
+      "Venkat Kalyan"
+    ],
+    "screenplay": [
+      "Venkat Kalyan"
+    ],
+    "dialogues": [
+      "Venkat Kalyan",
+      "Abhishek Jaiswal"
+    ],
+    "producers": [
+      "Umesh KR Bansal",
+      "Rajiv Agarwal",
+      "Shivin Narang",
+      "Nikhil Nanda",
+      "Zee Studios",
+      "Sudheer Babu Productions",
+      "Ess Kay Gee Entertainment"
+    ],
+    "production_company": [
+      "Zee Studios",
+      "Ess Kay Gee Entertainment",
+      "Sudheer Babu Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Samira Koppikar"
+      ],
+      "cinematographer": [
+        "Sameer Kalyani"
+      ],
+      "editors": [
+        "Venkat Kalyan"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Krishna Leela (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [],
+    "director": [
+      "Devan"
+    ],
+    "story_by": [
+      "Anil Kiran Kumar G"
+    ],
+    "screenplay": [
+      "Devan"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Jyothsna G"
+    ],
+    "production_company": [
+      "Mahasen Visuals"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Bheems Ceciroleo"
+      ],
+      "cinematographer": [
+        "Satish Muthyala"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Premistunnaa",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Bhanu Shankar"
+    ],
+    "story_by": [
+      "Bhanu Shankar"
+    ],
+    "screenplay": [
+      "Bhanu Shankar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Kanaka Durga Rao Pappula"
+    ],
+    "production_company": [
+      "IBM Production House LLP"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Siddharth Salur"
+      ],
+      "cinematographer": [
+        "Samala Bhasker"
+      ],
+      "editors": [
+        "Sirish Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "The Girlfriend (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Rahul Ravindran"
+    ],
+    "story_by": [
+      "Rahul Ravindran"
+    ],
+    "screenplay": [
+      "Rahul Ravindran"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vidya Koppineedi",
+      "Dheeraj Mogilineni"
+    ],
+    "production_company": [
+      "Dheeraj Mogilineni Entertainment",
+      "Geetha Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Songs:",
+        "Hesham Abdul Wahab",
+        "Prashanth R Vihari",
+        "Score:",
+        "Prashanth R. Vihari"
+      ],
+      "cinematographer": [
+        "Krishnan Vasant"
+      ],
+      "editors": [
+        "Chota K. Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 138,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹42 crore",
+      "box_office": "₹29 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "The Great Pre-Wedding Show",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Rahul Srinivas Lukalapu"
+    ],
+    "story_by": [
+      "Rahul Srinivas Lukalapu"
+    ],
+    "screenplay": [
+      "Rahul Srinivas Lukalapu"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sanddeep Agaram",
+      "Ashmita Reddy Basani"
+    ],
+    "production_company": [
+      "7pm Productions",
+      "Puppet Show Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Suresh Bobbili"
+      ],
+      "cinematographer": [
+        "K Soma Sekhar"
+      ],
+      "editors": [
+        "Naresh Adupa"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-07",
+      "running_time_minutes": 116,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Gopi Galla Goa Trip",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Rohit Penumatsa"
+    ],
+    "story_by": [
+      "Rohit",
+      "Sasi"
+    ],
+    "screenplay": [
+      "Rohit",
+      "Sasi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Raasta Sai Kumar",
+      "Sita Ramaraju",
+      "Ramana Reddy",
+      "Avanti Cinema"
+    ],
+    "production_company": [
+      "Raasta Films",
+      "Aurelis Arts",
+      "Awwal Number",
+      "Avanti Cinema"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Ravi Nidamarthy"
+      ],
+      "cinematographer": [
+        "Shashank Raghavula"
+      ],
+      "editors": [
+        "Avanti Ruya"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Jigris",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Harish Reddy Uppula"
+    ],
+    "story_by": [
+      "Harish Reddy Uppula"
+    ],
+    "screenplay": [
+      "Harish Reddy Uppula"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Krishna Vodapalli"
+    ],
+    "production_company": [
+      "Mount Meru Pictures"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Syed Kamran"
+      ],
+      "cinematographer": [
+        "Esvaradithyaa Yedida"
+      ],
+      "editors": [
+        "Chanakya Reddy Toorupu"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Love OTP",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Aniissh Tejeshwar"
+    ],
+    "story_by": [
+      "Aniissh Tejeshwar"
+    ],
+    "screenplay": [
+      "Aniissh Tejeshwar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vijay M Reddy"
+    ],
+    "production_company": [
+      "Bhavaprita Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Anand Rajavikram"
+      ],
+      "cinematographer": [
+        "Harsha Vardhan K"
+      ],
+      "editors": [
+        "Sharath Kumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Rolugunta Suri",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Anil Kumar Palla"
+    ],
+    "story_by": [
+      "Anil Kumar Palla"
+    ],
+    "screenplay": [
+      "Anil Kumar Palla",
+      "Aavula Venkatesh (additional)"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Sowmya Chandini Palla"
+    ],
+    "production_company": [
+      "Tapasvi Art Creations."
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Subash Anand"
+      ],
+      "cinematographer": [
+        "Anil Kumar Palla"
+      ],
+      "editors": [
+        "Aavula Venkatesh"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-14",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Santhana Prapthirasthu",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Sanjeev Reddy"
+    ],
+    "story_by": [
+      "Sanjeev Reddy",
+      "Sheik Dawood G"
+    ],
+    "screenplay": [
+      "Sanjeev Reddy",
+      "Sheik Dawood G"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Madhura Sreedhar Reddy",
+      "Nirvi Hari Prasada Reddy"
+    ],
+    "production_company": [
+      "Madhura Entertainment",
+      "Nirvi Arts"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Score",
+        "Ajay Arasada",
+        "Songs",
+        "Sunil Kashyap",
+        "Ajay Arasada"
+      ],
+      "cinematographer": [
+        "Mahi Reddy Pandugula"
+      ],
+      "editors": [
+        "Sai Krishna Ganala"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-14",
+      "running_time_minutes": 140,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "12A Railway Colony",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Horror"
+    ],
+    "director": [
+      "Nani Kasaragadda"
+    ],
+    "story_by": [
+      "Anil Vishwanath"
+    ],
+    "screenplay": [
+      "Anil Vishwanath"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Srinivasaa Chitturi"
+    ],
+    "production_company": [
+      "Srinivasaa Silver Screen"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Bheems Ceciroleo"
+      ],
+      "cinematographer": [
+        "Kushendar Ramesh Reddy"
+      ],
+      "editors": [
+        "Nani Kasaragadda"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-21",
+      "running_time_minutes": 125,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Happy Journey (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Chaithanya Konda"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Gangadhar Peddakonda"
+    ],
+    "production_company": [
+      "Future Bright Films"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Chaitanya Raja"
+      ],
+      "cinematographer": [
+        "U. Aruna Gnanavel"
+      ],
+      "editors": [
+        "Kondaveeti Ravi Kumar"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-21",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Paanch Minar",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Ram Kadumula"
+    ],
+    "story_by": [
+      "Ram Kadumula"
+    ],
+    "screenplay": [
+      "Ram Kadumula"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Madhavi",
+      "MSM Reddy"
+    ],
+    "production_company": [
+      "Connect Movies"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Shekar Chandra"
+      ],
+      "cinematographer": [
+        "Aditya Javvadi"
+      ],
+      "editors": [
+        "Prawin Pudi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-21",
+      "running_time_minutes": 134,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Premante",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Navaneeth Sriram"
+    ],
+    "story_by": [
+      "Navaneeth Sriram",
+      "Karthik Thupurani (dialogues)",
+      "Raj Kumar Kusuma (dialogues)"
+    ],
+    "screenplay": [
+      "Navaneeth Sriram",
+      "Karthik Thupurani"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Jhanvi Narang",
+      "Puskur Ram Mohan Rao"
+    ],
+    "production_company": [
+      "Sri Venkateshwara Creations LLP"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Leon James"
+      ],
+      "cinematographer": [
+        "Vishwanath Reddy"
+      ],
+      "editors": [
+        "Raghavendra Thirun"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-21",
+      "running_time_minutes": 137,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Raju Weds Rambai",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Saailu Kampati"
+    ],
+    "story_by": [
+      "Saailu Kampati"
+    ],
+    "screenplay": [
+      "Saailu Kampati"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Venu Udugula",
+      "Rahul Mopidevi"
+    ],
+    "production_company": [
+      "Dolamukhi Subaltern Films",
+      "Monsoons Tales",
+      "ETV Win"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Suresh Bobbili"
+      ],
+      "cinematographer": [
+        "Wajid Baig"
+      ],
+      "editors": [
+        "Naresh Adupa"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-21",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Andhra King Taluka",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Mahesh Babu P."
+    ],
+    "story_by": [
+      "Mahesh Babu P."
+    ],
+    "screenplay": [
+      "Mahesh Babu P."
+    ],
+    "dialogues": [],
+    "producers": [
+      "Naveen Yerneni",
+      "Y. Ravi Shankar",
+      "Bhushan Kumar"
+    ],
+    "production_company": [
+      "Mythri Movie Makers",
+      "Super Cassettes Industries"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Vivek",
+        "Mervin"
+      ],
+      "cinematographer": [
+        "Siddhartha Nuni",
+        "George C. Williams"
+      ],
+      "editors": [
+        "A. Sreekar Prasad"
+      ]
+    },
+    "release_details": {
+      "date": "2025-11-27",
+      "running_time_minutes": 163,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹32.50 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Akhanda 2: Thaandavam",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama",
+      "Fantasy"
+    ],
+    "director": [
+      "Boyapati Srinu"
+    ],
+    "story_by": [
+      "Boyapati Sreenu"
+    ],
+    "screenplay": [
+      "Boyapati Sreenu"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ram Achanta",
+      "Gopi Achanta",
+      "Ishan Saksena"
+    ],
+    "production_company": [
+      "14 Reels Plus Entertainment",
+      "IVY Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Thaman S."
+      ],
+      "cinematographer": [
+        "C. Ramprasad",
+        "Santosh Detake"
+      ],
+      "editors": [
+        "Tammiraju"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-12",
+      "running_time_minutes": 165,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹120 crore",
+      "box_office": "est. ₹120–128 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Drive (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Drama"
+    ],
+    "director": [
+      "Jenuse Mohamed"
+    ],
+    "story_by": [
+      "Jenuse Mohamed"
+    ],
+    "screenplay": [
+      "Jenuse Mohamed"
+    ],
+    "dialogues": [],
+    "producers": [
+      "V. Ananda Prasad"
+    ],
+    "production_company": [
+      "Bhavya Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Osho Venkat"
+      ],
+      "cinematographer": [
+        "Abinandhan Ramanujam"
+      ],
+      "editors": [
+        "Prawin Pudi"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-12",
+      "running_time_minutes": 107,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mowgli (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action"
+    ],
+    "director": [
+      "Sandeep Raj"
+    ],
+    "story_by": [
+      "Sandeep Raj"
+    ],
+    "screenplay": [
+      "Sandeep Raj"
+    ],
+    "dialogues": [],
+    "producers": [
+      "T. G. Vishwa Prasad",
+      "Krithi Prasad"
+    ],
+    "production_company": [
+      "People Media Factory"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Kaala Bhairava"
+      ],
+      "cinematographer": [
+        "Rama Maruti M."
+      ],
+      "editors": [
+        "Kodati Pavan Kalyan"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-13",
+      "running_time_minutes": 160,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Unpaarvaiyil",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Kabir Lal"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Ajay Kumar Singh",
+      "Rekha Singh"
+    ],
+    "production_company": [
+      "Lovely World Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Amar Mohile"
+      ],
+      "cinematographer": [
+        "Shahid Lal"
+      ],
+      "editors": [
+        "Sathish Suriya"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-19",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Gurram Paapi Reddy",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Murali Manohar"
+    ],
+    "story_by": [
+      "Poorna Prajna"
+    ],
+    "screenplay": [
+      "Murali Manohar"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Venu Saddi",
+      "Amar Bura",
+      "Jayakanth"
+    ],
+    "production_company": [
+      "MJM Motion Pictures",
+      "Bura and Saddi Creative Arts LLP"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Krishna Saurabh Surampalli"
+      ],
+      "cinematographer": [
+        "Arjun Raja"
+      ],
+      "editors": [
+        "Karthika Srinivas"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-19",
+      "running_time_minutes": 160,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Mario (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Comedy"
+    ],
+    "director": [
+      "Kalyanji Gogana"
+    ],
+    "story_by": [
+      "Kalyanji Gogana"
+    ],
+    "screenplay": [
+      "Kalyanji Gogana"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Prakya Anirudh Sreevatsav"
+    ],
+    "production_company": [
+      "Silver Screen Productions",
+      "Kalyanji Content Pictures",
+      "Rizwan Entertainment"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Rakendu Mouli",
+        "Sai Karthik"
+      ],
+      "cinematographer": [
+        "M. N. Balreddy"
+      ],
+      "editors": [
+        "Manikanth"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-19",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Missterious",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller"
+    ],
+    "director": [
+      "Mahi Komatireddy"
+    ],
+    "story_by": [],
+    "screenplay": [],
+    "dialogues": [],
+    "producers": [
+      "Jay Vallamdas"
+    ],
+    "production_company": [
+      "Ashley Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "M. L. Raja"
+      ],
+      "cinematographer": [
+        "Paravasthu Devendra Suri"
+      ],
+      "editors": []
+    },
+    "release_details": {
+      "date": "2025-12-19",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Bad Girlz",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Phani Pradeep"
+    ],
+    "story_by": [
+      "Munna Dhulipudi"
+    ],
+    "screenplay": [
+      "Munna Dhulipudi"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Shashidhar Nalla",
+      "Emmadi Soma Narsaiah",
+      "Ramisetti Rambabu",
+      "Ravula Ramesh"
+    ],
+    "production_company": [
+      "Prashvita Entertainment",
+      "Neeli Neeli Aakasam Creations",
+      "NVL Creations"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Anup Rubens"
+      ],
+      "cinematographer": [
+        "Arli Ganesh"
+      ],
+      "editors": [
+        "B. Nageswara Reddy"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Champion (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Drama"
+    ],
+    "director": [
+      "Pradeep Advaitham"
+    ],
+    "story_by": [
+      "Pradeep Advaitham"
+    ],
+    "screenplay": [
+      "Pradeep Advaitham"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Priyanka Dutt",
+      "G. K. Mohan",
+      "Gemini Kiran"
+    ],
+    "production_company": [
+      "Swapna Cinema",
+      "Anandi Art Creations",
+      "Zee Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mickey J. Meyer"
+      ],
+      "cinematographer": [
+        "R. Madhi"
+      ],
+      "editors": [
+        "Kotagiri Venkateswara Rao"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 166,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹45 crore",
+      "box_office": "₹11 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Dhandoraa",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama"
+    ],
+    "director": [
+      "Muralikanth Devasoth"
+    ],
+    "story_by": [
+      "Muralikanth Devasoth"
+    ],
+    "screenplay": [
+      "Muralikanth Devasoth"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Ravindra Benerjee Muppaneni (Benny)"
+    ],
+    "production_company": [
+      "Loukya Entertainments"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Mark K Robin"
+      ],
+      "cinematographer": [
+        "Venkat R. Shakamuri"
+      ],
+      "editors": [
+        "Srujana Adusumilli"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 135,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Eesha (film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Horror"
+    ],
+    "director": [
+      "Srinivas Manne"
+    ],
+    "story_by": [
+      "Srinivas Manne"
+    ],
+    "screenplay": [
+      "Srinivas Manne"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Pothula Hema Venkateswara Rao"
+    ],
+    "production_company": [
+      "HVR Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "RR Dhruvan"
+      ],
+      "cinematographer": [
+        "Santosh Sanamoni"
+      ],
+      "editors": [
+        "Vinai Ramasamy V"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": "₹9.50 crore"
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Patang (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Drama",
+      "Comedy"
+    ],
+    "director": [
+      "Praneeth Prattipati"
+    ],
+    "story_by": [
+      "Praneeth Prattipati"
+    ],
+    "screenplay": [
+      "Praneeth Prattipati"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Vijay Sekhar Anne",
+      "Sampath Maka",
+      "Suresh Reddy Kothinti"
+    ],
+    "production_company": [
+      "Cinematic Elements",
+      "Rishaan Cinemas",
+      "Monsoon Tales Banner",
+      "Suresh Productions"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Jose Jimmy"
+      ],
+      "cinematographer": [
+        "Shakthi Arvind"
+      ],
+      "editors": [
+        "Chanakya Reddy Toorupu"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 160,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Shambhala (2025 film)",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Thriller",
+      "Horror"
+    ],
+    "director": [
+      "Ugandhar Muni"
+    ],
+    "story_by": [
+      "Ugandhar Muni"
+    ],
+    "screenplay": [
+      "Ugandhar Muni"
+    ],
+    "dialogues": [],
+    "producers": [
+      "Mahidhar Reddy",
+      "Rajashekhar Annabhimoju"
+    ],
+    "production_company": [
+      "Shining Pictures Banner"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sricharan Pakala"
+      ],
+      "cinematographer": [
+        "Praveen K. Bangarri"
+      ],
+      "editors": [
+        "Shravan Katikaneni"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 0,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹13 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  },
+  {
+    "title": "Vrusshabha",
+    "year": 2025,
+    "language": "Telugu",
+    "genre": [
+      "Action",
+      "Fantasy"
+    ],
+    "director": [
+      "Nanda Kishore"
+    ],
+    "story_by": [
+      "Nanda Kishore"
+    ],
+    "screenplay": [
+      "Nanda Kishore"
+    ],
+    "dialogues": [
+      "SRK",
+      "Janardhana Maharshi",
+      "Karthik"
+    ],
+    "producers": [
+      "Shobha Kapoor",
+      "Ekta Kapoor",
+      "C. K. Padma Kumar",
+      "Varun Mathur",
+      "Saurabh Mishra",
+      "Abishek S. Vyas",
+      "Praveer Singh",
+      "Vishal Gurnani",
+      "Juhi Parekh Mehta"
+    ],
+    "production_company": [
+      "Connekkt Media",
+      "Balaji Motion Pictures",
+      "Abishek S Vyas Studios"
+    ],
+    "cast": [],
+    "crew": {
+      "music_director": [
+        "Sam C. S."
+      ],
+      "cinematographer": [
+        "Antony Samson"
+      ],
+      "editors": [
+        "K. M. Prakash"
+      ]
+    },
+    "release_details": {
+      "date": "2025-12-25",
+      "running_time_minutes": 124,
+      "formats": [
+        "Standard"
+      ]
+    },
+    "financials": {
+      "budget": "₹30 crore",
+      "box_office": ""
+    },
+    "plot_summary": ""
+  }
+]
