@@ -280,7 +280,23 @@ pip install -r requirements.txt
 
 ---
 
-## 4️⃣ Configure Environment Variables
+## 4️⃣ Set Up Neo4j Aura
+
+Graph RAG requires a Neo4j AuraDB instance to store and query the Knowledge Graph.
+
+### Create and Connect to a Neo4j Aura Instance
+
+1. Create a Neo4j Aura account.
+2. Create a new **AuraDB instance**.
+3. Open the created instance and choose **Connect**.
+4. Select the option to download the connection credentials.
+5. Download and securely store the credentials file.
+6. Use the Neo4j connection details from the downloaded credentials to configure the project's `.env` file.
+
+> **Important:** Never upload your Neo4j credentials or `.env` file to GitHub.
+
+
+## Configure Environment Variables
 
 Create a `.env` file in the project root using `.env.example` as a template.
 
