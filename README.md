@@ -304,7 +304,7 @@ Create a `.env` file in the project root using `.env.example` as a template.
 GOOGLE_API_KEY=your_google_api_key
 TMDB_API_KEY=your_tmdb_api_key
 NEO4J_URI=your_neo4j_uri
-NEO4J_USERNAME=neo4j
+NEO4J_USERNAME=neo4j_username
 NEO4J_PASSWORD=your_neo4j_password
 ```
 
