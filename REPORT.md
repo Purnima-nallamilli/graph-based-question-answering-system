@@ -85,6 +85,12 @@ This structure lets the system explicitly follow relationships, so multi-hop que
 
 ![Graph Schema and Architecture](screenshots/graph_schema_architecture.png)
 
+
+### Knowledge Graph in neo4j aura
+
+![Graph Schema and Architecture](screenshots/neo4j_database_overview.png)
+
+
 ---
 
 # 6. Retrieval Approach
