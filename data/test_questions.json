@@ -15,13 +15,13 @@
     "id": 3,
     "hop_type": "3-hop",
     "question": "Which actors starred in movies that had music composed by Bheems Ceciroleo?",
-    "expected_answer": "Nag Ashwin, Prashanth Neel, Buchi Babu Sana, Koratala Siva"
+    "expected_answer": "Venkatesh, Aishwarya Rajesh, Meenakshi Chaudhary, Upendra Limaye, Sai Kumar, Sangeeth Shobhan, Narne Nithin, Ram Nithin, Vishnu Oi, and Muralidhar Goud"
   },
 
   {
     "id": 4,
     "hop_type": "3-hop",
     "question": "Which other directors directed the movies whose music director is the music director of Daaku Maharaaj?",
-    "expected_answer": "Salaar, Project K-related movies, and other linked films in the dataset."
+    "expected_answer": "S. Shankar, Bobby Kolli, Kalyan Shankar, Sujeeth, Neeraja Kona."
   }
 ]
