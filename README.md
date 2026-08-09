@@ -209,8 +209,7 @@ graph-based-question-answering-system/
 │
 ├── scripts/
 │   ├── wiki_scrapper.py           # Dataset collection
-│   ├── patch_data.py              # Metadata enrichment
-│   ├── finalize_data.py           # Dataset standardization
+│   ├── patch_data.py              # Metadata enrichment         
 │   ├── ingest.py                  # Neo4j graph ingestion
 │   ├── ingest_vector.py           # ChromaDB ingestion
 │   └── test_conn.py               # Neo4j connection verification
