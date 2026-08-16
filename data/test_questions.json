@@ -1,27 +1,72 @@
 [
   {
     "id": 1,
-    "hop_type": "1-hop",
+    "category": "1-Hop Direct",
     "question": "Who directed the movie Game Changer?",
-    "expected_answer": "S. Shankar"
+    "expected_answer": "S. Shankar",
+    "expected_entities": ["S. Shankar"]
   },
   {
     "id": 2,
-    "hop_type": "2-hop",
-    "question": "Which directors directed movies starring actors in Katha Kamamishu?",
-    "expected_answer": "Amma Rajashekar, Sriharsha Manne are starring actors in Katha Kamamishu"
+    "category": "1-Hop Direct",
+    "question": "Who composed the music for Daaku Maharaaj?",
+    "expected_answer": "Thaman S",
+    "expected_entities": ["Thaman S"]
   },
   {
     "id": 3,
-    "hop_type": "3-hop",
-    "question": "Which actors starred in movies that had music composed by Bheems Ceciroleo?",
-    "expected_answer": "Venkatesh, Aishwarya Rajesh, Meenakshi Chaudhary, Upendra Limaye, Sai Kumar, Sangeeth Shobhan, Narne Nithin, Ram Nithin, Vishnu Oi, and Muralidhar Goud"
+    "category": "1-Hop Direct",
+    "question": "Which production house produced Game Changer?",
+    "expected_answer": "Sri Venkateswara Creations",
+    "expected_entities": ["Sri Venkateswara Creations"]
   },
-
   {
     "id": 4,
-    "hop_type": "3-hop",
-    "question": "Which other directors directed the movies whose music director is the music director of Daaku Maharaaj?",
-    "expected_answer": "S. Shankar, Bobby Kolli, Kalyan Shankar, Sujeeth, Neeraja Kona."
+    "category": "2-Hop Interconnected",
+    "question": "Which directors directed movies starring actors in Katha Kamamishu?",
+    "expected_answer": "Amma Rajashekar, Sriharsha Manne",
+    "expected_entities": ["Amma Rajashekar", "Sriharsha Manne"]
+  },
+  {
+    "id": 5,
+    "category": "2-Hop Interconnected",
+    "question": "Which actors starred in movies directed by S. Shankar?",
+    "expected_answer": "Ram Charan, Kiara Advani, S. J. Suryah, Anjali",
+    "expected_entities": ["Ram Charan", "Kiara Advani", "S. J. Suryah", "Anjali"]
+  },
+  {
+    "id": 6,
+    "category": "2-Hop Interconnected",
+    "question": "Which actors appeared alongside Ram Charan in Game Changer?",
+    "expected_answer": "Kiara Advani, S. J. Suryah, Anjali, Jayaram",
+    "expected_entities": ["Kiara Advani", "S. J. Suryah", "Anjali", "Jayaram"]
+  },
+  {
+    "id": 7,
+    "category": "3-Hop Traversal",
+    "question": "Which actors starred in movies that had music composed by Bheems Ceciroleo?",
+    "expected_answer": "Venkatesh, Aishwarya Rajesh, Meenakshi Chaudhary, Sai Kumar",
+    "expected_entities": ["Venkatesh", "Aishwarya Rajesh", "Meenakshi Chaudhary", "Sai Kumar"]
+  },
+  {
+    "id": 8,
+    "category": "3-Hop Traversal",
+    "question": "Which other directors directed movies whose music director is the music director of Daaku Maharaaj?",
+    "expected_answer": "S. Shankar, Neeraja Kona, Kalyan Shankar, Sujeeth",
+    "expected_entities": ["S. Shankar", "Neeraja Kona", "Kalyan Shankar", "Sujeeth"]
+  },
+  {
+    "id": 9,
+    "category": "3-Hop Traversal",
+    "question": "Which actors worked in movies directed by directors who collaborated with Thaman S?",
+    "expected_answer": "Ram Charan, Anjali, Kiara Advani, S. J. Suryah, Srikanth, Nandamuri Balakrishna, Bobby Deol, Pragya Jaiswal, Shraddha Srinath, Vedha Agarwal",
+    "expected_entities": ["Ram Charan", "Anjali", "Kiara Advani", "S. J. Suryah, Srikanth", "Nandamuri Balakrishna", "Bobby Deol", "Pragya Jaiswal", "Shraddha Srinath", "Vedha Agarwal"]
+  },
+  {
+    "id": 10,
+    "category": "Multi-Hop Broad",
+    "question": "Tell me about S.S. Rajamouli movies and who acted in them?",
+    "expected_answer": "Prabhas, Rana Daggubati, NTR Jr., Ram Charan",
+    "expected_entities": ["Prabhas", "Rana Daggubati", "NTR Jr.", "Ram Charan"]
   }
 ]
