@@ -1,6 +1,7 @@
 import os
 import sys
 import time
+import json
 import pandas as pd
 import streamlit as st
 
@@ -20,6 +21,69 @@ except ImportError:
     except ImportError as e:
         st.error(f"❌ Failed to load backend modules: {e}")
 
+# --- Helper: Ground Truth Benchmark Loader ---
+@st.cache_data
+def load_benchmark_questions():
+    """Loads benchmark questions and expected ground-truth entities from JSON."""
+    json_paths = [
+        os.path.join(BASE_DIR, "data", "test_questions.json"),
+        os.path.join(BASE_DIR, "test_questions.json")
+    ]
+    for path in json_paths:
+        if os.path.exists(path):
+            try:
+                with open(path, "r", encoding="utf-8") as f:
+                    return json.load(f)
+            except Exception:
+                pass
+    return []
+
+def find_ground_truth(user_query: str):
+    """Finds ground truth expected_entities if question exists in test_questions.json."""
+    clean_q = user_query.strip().lower()
+    benchmark_dataset = load_benchmark_questions()
+    for item in benchmark_dataset:
+        if item.get("question", "").strip().lower() == clean_q:
+            return item.get("expected_entities", [])
+    return None
+
+# --- Helper: Metric Calculation (Recall for Retrieval, F1 for Answer) ---
+def compute_rag_metrics(context_raw: str, answer_str: str, ground_truth: list):
+    """
+    Retrieval Accuracy -> Recall (Checks if ground-truth facts entered raw context)
+    Answer Accuracy    -> F1-Score (Evaluates precision & recall balance in final output)
+    """
+    if not ground_truth:
+        return 0.0, 0.0
+
+    gt_items = [g.strip().lower() for g in ground_truth if g.strip()]
+    total_gt = len(gt_items)
+    if total_gt == 0:
+        return 0.0, 0.0
+
+    # 1. Retrieval Accuracy (Recall)
+    ctx_lower = str(context_raw).lower()
+    retrieved_count = sum(1 for gt in gt_items if gt in ctx_lower)
+    retrieval_recall = (retrieved_count / total_gt) * 100.0
+
+    # 2. Answer Accuracy (F1-Score)
+    ans_lower = str(answer_str).lower()
+    ans_tp = sum(1 for gt in gt_items if gt in ans_lower)
+    
+    ans_recall = ans_tp / total_gt
+    
+    # Estimate total entity mentions in final answer text
+    ans_tokens = [x.strip() for x in ans_lower.replace('\n', ',').split(',') if x.strip()]
+    approx_total_entities = max(ans_tp, len(ans_tokens))
+    ans_precision = (ans_tp / approx_total_entities) if approx_total_entities > 0 else 0.0
+
+    if (ans_precision + ans_recall) > 0:
+        ans_f1 = (2 * ans_precision * ans_recall) / (ans_precision + ans_recall) * 100.0
+    else:
+        ans_f1 = 0.0
+
+    return round(retrieval_recall, 1), round(ans_f1, 1)
+
 # --- Helper: Query Complexity Detection ---
 def detect_query_hops(question: str):
     """Analyzes question structure to determine hop complexity."""
@@ -30,11 +94,11 @@ def detect_query_hops(question: str):
         return "3-Hop (Multi-Step Traversal)", "Requires multi-step relational traversal across connected entities (Movie ➔ MusicDirector ➔ Movie ➔ Actor)."
     
     # 2-Hop Indicators
-    elif any(phrase in q_lower for phrase in ["appeared alongside", "acted with", "co-star", "actors in movies directed by"]):
+    elif any(phrase in q_lower for phrase in ["appeared alongside", "acted with", "co-star", "actors in movies directed by", "directors directed movies starring"]):
         return "2-Hop (Interconnected Entity)", "Requires bridging intermediate entities across 2 relational joins."
     
     # 1-Hop Indicators
-    elif any(phrase in q_lower for phrase in ["who directed", "release year", "who acted in"]):
+    elif any(phrase in q_lower for phrase in ["who directed", "release year", "who acted in", "who composed"]):
         return "1-Hop (Direct Relation)", "Direct relationship lookup between 2 primary nodes."
     
     return "Multi-Hop Request", "Broad structural query requiring entity extraction and relational graph traversal."
@@ -140,8 +204,8 @@ if st.sidebar.button("3-Hop: Multi-Step Traversal"):
     st.session_state["user_query"] = "Which actors starred in movies that had music composed by Bheems Ceciroleo?"
     st.rerun()
 
-if st.sidebar.button("Ambiguous Question"):
-    st.session_state["user_query"] = "Tell me about Rajamouli movies and who acted in them?"
+if st.sidebar.button("Multi-Hop Broad Question"):
+    st.session_state["user_query"] = "Tell me about S.S. Rajamouli movies and who acted in them?"
     st.rerun()
 
 st.sidebar.markdown("---")
@@ -208,7 +272,6 @@ with tab1:
                 else:
                     st.success(g_answer)
 
-                # --- EXPANDER TO INSPECT GENERATED CYPHER & GRAPH CONTEXT ---
                 with st.expander("🔍 View Generated Cypher Query & Graph Context"):
                     if cypher_code:
                         st.subheader("Generated Cypher Query")
@@ -245,7 +308,7 @@ with tab1:
                     **Retrieval Bottleneck:** 
                     Vector search embeds chunks of text independently based on semantic similarity.
                     When a query requires joining information across multiple entities (e.g., *Movie A ➔ MusicDirector ➔ Movie B ➔ Actor*), 
-                    Vector RAG fails to perform relational joins, leading to missing context or complete answers refusal.
+                    Vector RAG fails to perform relational joins, leading to missing context or complete answer refusal.
                     """)
 
             # ------------------ DYNAMIC QUERY COMPLEXITY BANNER ------------------
@@ -263,79 +326,62 @@ with tab1:
             """, unsafe_allow_html=True)
 
             # ------------------ PROBLEM STATEMENT 3: EVALUATION METRICS SCORECARD ------------------
-            st.markdown("---")
-            st.markdown("### 📊 Problem Statement 3: Evaluation Metrics")
-            
-            # --- Dynamic Metric & Status Calculations ---
-            # 1. Graph RAG Metrics Logic
-            if is_error or "error" in g_answer.lower():
-                g_status = "Failed"
-                g_ret_acc = 0.0
-                g_ans_acc = 0.0
-            elif "don't know" in g_answer.lower() or "no information" in g_answer.lower():
-                g_status = "Partial"
-                g_ret_acc = 50.0
-                g_ans_acc = 40.0
-            else:
-                g_status = "Completed"
-                g_ret_acc = 100.0 if graph_records else 90.0
-                g_ans_acc = 95.0
+            ground_truth_entities = find_ground_truth(user_input)
 
-            # 2. Vector RAG Metrics Logic
-            v_lower = v_answer.lower()
-            if "error" in v_lower:
-                v_status = "Failed"
-                v_ret_acc = 0.0
-                v_ans_acc = 0.0
-            elif "not have enough information" in v_lower or "don't know" in v_lower:
-                v_status = "Partial"
-                v_ret_acc = 30.0
-                v_ans_acc = 20.0
-            else:
-                v_status = "Completed"
-                v_ret_acc = 85.0
-                v_ans_acc = 80.0
+            if ground_truth_entities is not None:
+                st.markdown("---")
+                st.markdown("### 📊 Benchmark Evaluation Metrics Scorecard")
 
-            # Determining Winner per category
-            win_speed = "Vector RAG (Speed)" if vector_lat <= graph_lat else "Graph RAG (Speed)"
-            win_ret = "Graph RAG (Precision)" if g_ret_acc >= v_ret_acc else "Vector RAG (Precision)"
-            win_ans = "Graph RAG (Accuracy)" if g_ans_acc >= v_ans_acc else "Vector RAG (Accuracy)"
-            
-            if g_status == "Completed" and v_status != "Completed":
-                win_status = "Graph RAG (Completeness)"
-            elif v_status == "Completed" and g_status != "Completed":
-                win_status = "Vector RAG (Completeness)"
-            else:
-                win_status = "Tie (Both " + g_status + ")"
-
-            # Structured Evaluation Table
-            eval_dict = {
-                "Evaluation Metric": ["Speed (Latency)", "Retrieval Accuracy", "Answer Accuracy", "Execution Status"],
-                "Graph RAG Engine": [f"{graph_lat} sec", f"{g_ret_acc}%", f"{g_ans_acc}%", g_status],
-                "Vector RAG Engine": [f"{vector_lat} sec", f"{v_ret_acc}%", f"{v_ans_acc}%", v_status],
-                "Winning System": [win_speed, win_ret, win_ans, win_status]
-            }
-            
-            st.table(pd.DataFrame(eval_dict))
-
-            # --- Comparative Visual Bar Charts ---
-            st.markdown("#### 📈 Visual Performance Comparison")
-            
-            chart_df = pd.DataFrame({
-                "Engine": ["Graph RAG", "Vector RAG"],
-                "Latency (sec)": [graph_lat, vector_lat],
-                "Retrieval Accuracy (%)": [g_ret_acc, v_ret_acc],
-                "Answer Accuracy (%)": [g_ans_acc, v_ans_acc]
-            }).set_index("Engine")
-
-            col_chart1, col_chart2 = st.columns(2)
-            with col_chart1:
-                st.caption("⏱️ **Execution Latency** *(Lower is better)*")
-                st.bar_chart(chart_df[["Latency (sec)"]])
+                # Compute metrics using ground truth entities
+                g_ret_acc, g_ans_f1 = compute_rag_metrics(
+                    context_raw=str(graph_records) + " " + str(cypher_code) + " " + g_answer,
+                    answer_str=g_answer,
+                    ground_truth=ground_truth_entities
+                )
                 
-            with col_chart2:
-                st.caption("🎯 **Retrieval & Answer Accuracy (%)** *(Higher is better)*")
-                st.bar_chart(chart_df[["Retrieval Accuracy (%)", "Answer Accuracy (%)"]])
+                v_ret_acc, v_ans_f1 = compute_rag_metrics(
+                    context_raw=v_answer,
+                    answer_str=v_answer,
+                    ground_truth=ground_truth_entities
+                )
+
+                # Determine Winning System
+                win_speed = "Vector RAG (Speed)" if vector_lat <= graph_lat else "Graph RAG (Speed)"
+                win_ret = "Graph RAG (Recall)" if g_ret_acc >= v_ret_acc else "Vector RAG (Recall)"
+                win_ans = "Graph RAG (F1-Score)" if g_ans_f1 >= v_ans_f1 else "Vector RAG (F1-Score)"
+
+                # Structured Evaluation Table
+                eval_dict = {
+                    "Evaluation Metric": ["Speed (Latency)", "Retrieval Accuracy (Recall)", "Answer Accuracy (F1-Score)"],
+                    "Graph RAG Engine": [f"{graph_lat} sec", f"{g_ret_acc}%", f"{g_ans_f1}%"],
+                    "Vector RAG Engine": [f"{vector_lat} sec", f"{v_ret_acc}%", f"{v_ans_f1}%"],
+                    "Winning System": [win_speed, win_ret, win_ans]
+                }
+                
+                st.table(pd.DataFrame(eval_dict))
+
+                # Visual Performance Comparison Bar Charts
+                st.markdown("#### 📈 Visual Performance Comparison")
+                
+                chart_df = pd.DataFrame({
+                    "Engine": ["Graph RAG", "Vector RAG"],
+                    "Latency (sec)": [graph_lat, vector_lat],
+                    "Retrieval Recall (%)": [g_ret_acc, v_ret_acc],
+                    "Answer F1-Score (%)": [g_ans_f1, v_ans_f1]
+                }).set_index("Engine")
+
+                col_chart1, col_chart2 = st.columns(2)
+                with col_chart1:
+                    st.caption("⏱️ **Execution Latency** *(Lower is better)*")
+                    st.bar_chart(chart_df[["Latency (sec)"]])
+                    
+                with col_chart2:
+                    st.caption("🎯 **Retrieval Recall & Answer F1-Score (%)** *(Higher is better)*")
+                    st.bar_chart(chart_df[["Retrieval Recall (%)", "Answer F1-Score (%)"]])
+
+            else:
+                st.markdown("---")
+                st.info("💡 **Note:** Real-time Retrieval Accuracy (Recall) and Answer Accuracy (F1-Score) evaluation metrics are displayed when testing questions from `test_questions.json` (or sidebar quick fills). For custom questions, full traversal results and execution speeds are shown without metric scorecards.")
 
     else:
         st.info("👆 Enter any question in the search box above (or click a sample question on the left) and click **🚀 Run Comparison** to see real-time results.")
