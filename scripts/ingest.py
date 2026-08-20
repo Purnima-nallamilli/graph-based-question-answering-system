@@ -1,20 +1,27 @@
 import json
 import os
 import re
+import sys
 from pathlib import Path
 from dotenv import load_dotenv
 from neo4j import GraphDatabase
 
-# Points to project root directory (Graph_QA/)
+# Points to project root directory
 BASE_DIR = Path(__file__).resolve().parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.append(str(BASE_DIR))
 
-# Load environment variables from root .env file
-load_dotenv(BASE_DIR / ".env", override=True)
-
-# Neo4j Database Connection Settings
-URI = os.getenv("NEO4J_URI")
-USERNAME = os.getenv("NEO4J_USERNAME")
-PASSWORD = os.getenv("NEO4J_PASSWORD")
+# Unified credential loading from src.config (or local .env fallback)
+try:
+    from src.config import NEO4J_URI, NEO4J_USERNAME, NEO4J_PASSWORD
+    URI = NEO4J_URI
+    USERNAME = NEO4J_USERNAME
+    PASSWORD = NEO4J_PASSWORD
+except ImportError:
+    load_dotenv(BASE_DIR / ".env", override=True)
+    URI = os.getenv("NEO4J_URI")
+    USERNAME = os.getenv("NEO4J_USERNAME")
+    PASSWORD = os.getenv("NEO4J_PASSWORD")
 
 # Dataset File Path inside project data/ directory
 DATA_DIR = BASE_DIR / "data"
@@ -22,7 +29,7 @@ INPUT_FILE = DATA_DIR / "movies_dataset.json"
 
 
 # =============================================================================
-# 2. Python Data Enrichment Helpers
+# Python Data Enrichment Helpers
 # =============================================================================
 def parse_currency_to_crores(val_str: str) -> float:
     """Converts strings like '₹10 crore', '150 Cr', or '$5 Million' to numeric Crores."""
@@ -50,7 +57,7 @@ def parse_currency_to_crores(val_str: str) -> float:
 def parse_date_and_season(date_str: str):
     """
     Parses dates in 'YYYY-MM-DD' or 'DD Month YYYY' format and returns:
-    (Month Name, Quarter, Festival/Release Season)
+    (Month Name, Quarter, Release Season)
     """
     if not date_str or not isinstance(date_str, str):
         return "Unknown", "Unknown", "Regular Release"
@@ -80,9 +87,8 @@ def parse_date_and_season(date_str: str):
         return "Unknown", "Unknown", "Regular Release"
 
     month_idx = month_names.index(found_month) + 1
-    quarter = f"Q{(month_idx - 1) // 3 + 1} 2025"
+    quarter = f"Q{(month_idx - 1) // 3 + 1}"
 
-    # Tollywood Cultural Release Windows
     if found_month == "January":
         season = "Sankranti Release"
     elif found_month in ["April", "May"]:
@@ -160,7 +166,6 @@ def preprocess_movie_record(movie: dict) -> dict:
     m["producers"] = [p.strip() for p in movie.get("producers", []) if p and p.strip()]
     m["production_companies"] = [pc.strip() for pc in movie.get("production_company", []) if pc and pc.strip()]
     m["genres"] = [g.strip() for g in movie.get("genre", []) if g and g.strip()]
-    #m["ott_platforms"] = [o.strip() for o in movie.get("ott_platform", []) if o and o.strip()]
 
     crew = movie.get("crew", {})
     m["music_directors"] = [md.strip() for md in crew.get("music_director", []) if md and md.strip()]
@@ -173,7 +178,7 @@ def preprocess_movie_record(movie: dict) -> dict:
 
 
 # =============================================================================
-# 3. Neo4j Schema Constraints
+# Neo4j Schema Constraints
 # =============================================================================
 CONSTRAINTS_QUERIES = [
     "CREATE CONSTRAINT IF NOT EXISTS FOR (m:Movie) REQUIRE m.title IS UNIQUE;",
@@ -186,17 +191,16 @@ CONSTRAINTS_QUERIES = [
     "CREATE CONSTRAINT IF NOT EXISTS FOR (w:Writer) REQUIRE w.name IS UNIQUE;",
     "CREATE CONSTRAINT IF NOT EXISTS FOR (c:Cinematographer) REQUIRE c.name IS UNIQUE;",
     "CREATE CONSTRAINT IF NOT EXISTS FOR (e:Editor) REQUIRE e.name IS UNIQUE;"
-   # "CREATE CONSTRAINT IF NOT EXISTS FOR (ott:OTTPlatform) REQUIRE ott.name IS UNIQUE;"
 ]
 
 
 # =============================================================================
-# 4. Master Cypher Ingestion Query
+# Master Cypher Ingestion Query (Uses FOREACH for Empty List Safety)
 # =============================================================================
 CYPHER_INGESTION = """
 UNWIND $movies AS mData
 
-// A. Central Movie Node
+// A. Central Movie Node Creation
 MERGE (m:Movie {title: mData.title})
 SET m.year = mData.year,
     m.language = mData.language,
@@ -213,70 +217,73 @@ SET m.year = mData.year,
     m.release_quarter = mData.release_quarter,
     m.holiday_season = mData.holiday_season
 
-// B. Connect Cast with Role, Billing Order & Lead Status
-WITH m, mData
-UNWIND mData.clean_cast AS c
-MERGE (a:Actor {name: c.name})
-MERGE (a)-[r:ACTED_IN]->(m)
-SET r.role = c.role,
-    r.billing_order = c.billing_order,
-    r.is_lead = c.is_lead
+// B. Connect Cast
+FOREACH (c IN mData.clean_cast |
+    MERGE (a:Actor {name: c.name})
+    MERGE (a)-[r:ACTED_IN]->(m)
+    SET r.role = c.role,
+        r.billing_order = c.billing_order,
+        r.is_lead = c.is_lead
+)
 
 // C. Connect Directors
-WITH DISTINCT m, mData
-UNWIND mData.directors AS dirName
-MERGE (d:Director {name: dirName})
-MERGE (d)-[:DIRECTED]->(m)
+FOREACH (dirName IN mData.directors |
+    MERGE (d:Director {name: dirName})
+    MERGE (d)-[:DIRECTED]->(m)
+)
 
 // D. Connect Music Directors
-WITH DISTINCT m, mData
-UNWIND mData.music_directors AS composer
-MERGE (md:MusicDirector {name: composer})
-MERGE (md)-[:COMPOSED_MUSIC_FOR]->(m)
+FOREACH (composer IN mData.music_directors |
+    MERGE (md:MusicDirector {name: composer})
+    MERGE (md)-[:COMPOSED_MUSIC_FOR]->(m)
+)
 
-// E. Connect Producers (Individual People)
-WITH DISTINCT m, mData
-UNWIND mData.producers AS prodName
-MERGE (prod:Producer {name: prodName})
-MERGE (prod)-[:PRODUCED]->(m)
+// E. Connect Producers
+FOREACH (prodName IN mData.producers |
+    MERGE (prod:Producer {name: prodName})
+    MERGE (prod)-[:PRODUCED]->(m)
+)
 
-// F. Connect Production Companies (Studios / Banners)
-WITH DISTINCT m, mData
-UNWIND mData.production_companies AS studio
-MERGE (p:ProductionHouse {name: studio})
-MERGE (p)-[:PRODUCED_BY_BANNER]->(m)
+// F. Connect Production Houses
+FOREACH (studio IN mData.production_companies |
+    MERGE (p:ProductionHouse {name: studio})
+    MERGE (p)-[:PRODUCED_BY_BANNER]->(m)
+)
 
 // G. Connect Genres
-WITH DISTINCT m, mData
-UNWIND mData.genres AS gName
-MERGE (g:Genre {name: gName})
-MERGE (m)-[:BELONGS_TO]->(g)
+FOREACH (gName IN mData.genres |
+    MERGE (g:Genre {name: gName})
+    MERGE (m)-[:BELONGS_TO]->(g)
+)
 
-// H. Connect Writers (Story, Screenplay, Dialogues)
-WITH DISTINCT m, mData
-UNWIND mData.writers AS wName
-MERGE (w:Writer {name: wName})
-MERGE (w)-[:WROTE]->(m)
+// H. Connect Writers
+FOREACH (wName IN mData.writers |
+    MERGE (w:Writer {name: wName})
+    MERGE (w)-[:WROTE]->(m)
+)
 
 // I. Connect Cinematographers
-WITH DISTINCT m, mData
-UNWIND mData.cinematographers AS dp
-MERGE (c:Cinematographer {name: dp})
-MERGE (c)-[:FILMED]->(m)
+FOREACH (dp IN mData.cinematographers |
+    MERGE (c:Cinematographer {name: dp})
+    MERGE (c)-[:FILMED]->(m)
+)
 
 // J. Connect Editors
-WITH DISTINCT m, mData
-UNWIND mData.editors AS edName
-MERGE (e:Editor {name: edName})
-MERGE (e)-[:EDITED]->(m)
-
+FOREACH (edName IN mData.editors |
+    MERGE (e:Editor {name: edName})
+    MERGE (e)-[:EDITED]->(m)
+)
 """
 
 
 # =============================================================================
-# 5. Main Execution Entrypoint
+# Execution Pipeline Entrypoint
 # =============================================================================
 def run_pipeline():
+    if not URI or not PASSWORD:
+        print("❌ Error: Missing Neo4j credentials. Check .env or Streamlit secrets.")
+        return
+
     if not INPUT_FILE.exists():
         print(f"❌ Error: Could not find input file at '{INPUT_FILE}'")
         return
@@ -288,7 +295,7 @@ def run_pipeline():
     print(f"⚙️ Preprocessing and enriching {len(raw_dataset)} movie records...")
     processed_movies = [preprocess_movie_record(m) for m in raw_dataset]
 
-    print("🔌 Connecting to Neo4j instance...")
+    print(f"🔌 Connecting to Neo4j instance at '{URI}'...")
     driver = GraphDatabase.driver(URI, auth=(USERNAME, PASSWORD))
 
     try:
@@ -299,13 +306,13 @@ def run_pipeline():
                 session.run(query)
 
             # Step 2: Batch Ingest Data
-            print(" Executing batch ingestion query...")
+            print("🚀 Executing batch ingestion query...")
             session.run(CYPHER_INGESTION, movies=processed_movies)
 
             print("✅ Ingestion successfully completed!")
 
     except Exception as e:
-        print(f" An error occurred during ingestion: {e}")
+        print(f"❌ An error occurred during ingestion: {e}")
     finally:
         driver.close()
 
