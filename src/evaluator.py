@@ -2,7 +2,7 @@ import os
 import sys
 from tabulate import tabulate
 
-# Ensure parent directory is in path for imports
+# Ensure parent directory is in path for import
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 if BASE_DIR not in sys.path:
     sys.path.append(BASE_DIR)
