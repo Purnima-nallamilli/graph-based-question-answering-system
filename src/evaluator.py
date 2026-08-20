@@ -1,11 +1,12 @@
-import os
 import sys
+import os
+from pathlib import Path
 from tabulate import tabulate
 
-# Ensure parent directory is in path for import
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
-if BASE_DIR not in sys.path:
-    sys.path.append(BASE_DIR)
+# Ensure project root directory is in sys.path for modular imports
+BASE_DIR = Path(__file__).resolve().parent.parent
+if str(BASE_DIR) not in sys.path:
+    sys.path.append(str(BASE_DIR))
 
 # Import backend modules safely
 try:
@@ -37,7 +38,6 @@ TEST_QUESTIONS = [
         "question": "Which actors starred in movies that had music composed by Bheems Ceciroleo?",
         "expected": "Multi-step relational path across composer filmographies"
     }
-    
 ]
 
 def clean_response(response) -> str:
@@ -95,7 +95,7 @@ def run_evaluation():
         "Vector RAG Answer"
     ]
     
-    # maxcolwidths ensures clean word wrapping in the terminal output grid
+    # maxcolwidths ensures clean word wrapping in terminal output
     print(tabulate(
         results, 
         headers=headers, 
