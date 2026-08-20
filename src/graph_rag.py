@@ -1,19 +1,14 @@
-import os
-from pathlib import Path
-from dotenv import load_dotenv
-
 from langchain_neo4j import Neo4jGraph, GraphCypherQAChain
 from langchain_google_genai import ChatGoogleGenerativeAI
 from langchain_core.prompts import PromptTemplate
 
-# Load environment variables
-BASE_DIR = Path(__file__).resolve().parent.parent
-load_dotenv(BASE_DIR / ".env", override=True)
+from src.config import (
+    GOOGLE_API_KEY,
+    NEO4J_URI,
+    NEO4J_USERNAME,
+    NEO4J_PASSWORD
+)
 
-GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
-NEO4J_URI = os.getenv("NEO4J_URI")
-NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
-NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
 
 # Custom Cypher generation prompt to handle titles with suffixes like '(film)'
 CYPHER_GENERATION_TEMPLATE = """Task: Generate Cypher statement to query a graph database.
@@ -28,18 +23,22 @@ When matching movie titles, ALWAYS use case-insensitive fuzzy matching with `toL
 Question: {question}
 Cypher Query:"""
 
+
 cypher_prompt = PromptTemplate(
     input_variables=["schema", "question"],
     template=CYPHER_GENERATION_TEMPLATE
 )
 
+
 chain = None
+
 try:
     graph = Neo4jGraph(
         url=NEO4J_URI,
         username=NEO4J_USERNAME,
         password=NEO4J_PASSWORD
     )
+
     graph.refresh_schema()
 
     llm = ChatGoogleGenerativeAI(
@@ -55,22 +54,33 @@ try:
         verbose=True,
         allow_dangerous_requests=True
     )
+
 except Exception as e:
     print(f"Neo4j Connection Notice: {e}")
 
+
 def query_graph_rag(query: str) -> str:
     """Invokes the Graph RAG pipeline with a given query."""
+
     if not chain:
         return "Graph RAG unavailable: Neo4j connection failed or missing credentials."
-    
+
     try:
         response = chain.invoke({"query": query})
         return response.get("result", "No result returned.")
+
     except Exception as e:
         return f"Graph RAG Error: {str(e)}"
 
+
 if __name__ == "__main__":
-    test_question = "Which production banners produced OTHER movies starring the lead actor of Game Changer?"
+    test_question = (
+        "Which production banners produced OTHER movies "
+        "starring the lead actor of Game Changer?"
+    )
+
     print(f"🔍 Testing Graph RAG Question: '{test_question}'")
+
     answer = query_graph_rag(test_question)
+
     print(f"🤖 Graph RAG Answer:\n{answer}")
