@@ -6,15 +6,29 @@ from dotenv import load_dotenv
 BASE_DIR = Path(__file__).resolve().parent.parent
 env_path = BASE_DIR / ".env"
 
-load_dotenv(dotenv_path=env_path, override=True)
+# Load .env when running locally
+# Do not override existing environment variables
+load_dotenv(dotenv_path=env_path, override=False)
 
-# Fetch values using the exact key names defined in your .env file
+# Fetch configuration values
 GOOGLE_API_KEY = os.getenv("GOOGLE_API_KEY")
 NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USERNAME = os.getenv("NEO4J_USERNAME")
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
 
+# If running on Streamlit Cloud, read from Streamlit Secrets
+try:
+    import streamlit as st
+
+    GOOGLE_API_KEY = GOOGLE_API_KEY or st.secrets.get("GOOGLE_API_KEY")
+    NEO4J_URI = NEO4J_URI or st.secrets.get("NEO4J_URI")
+    NEO4J_USERNAME = NEO4J_USERNAME or st.secrets.get("NEO4J_USERNAME")
+    NEO4J_PASSWORD = NEO4J_PASSWORD or st.secrets.get("NEO4J_PASSWORD")
+
+except Exception:
+    pass
+
 if not GOOGLE_API_KEY or not NEO4J_PASSWORD:
-    print("⚠️ Warning: Missing GOOGLE_API_KEY or NEO4J_PASSWORD in .env file!")
+    print("⚠️ Warning: Missing GOOGLE_API_KEY or NEO4J_PASSWORD!")
 else:
-    print("✅ Environment variables loaded successfully from .env!")
+    print("✅ Configuration loaded successfully!")
